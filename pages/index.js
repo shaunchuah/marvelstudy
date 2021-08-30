@@ -123,7 +123,7 @@ export default function Home() {
               <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">
                 MARVEL
               </h1>
-              <p class="mb-8 leading-relaxed text-xl">
+              <p class="mb-8 leading-relaxed text-xl font-semibold">
                 Mitochondrial Antioxidant Therapy to <br />
                 Resolve Inflammation in Ulcerative Colitis
               </p>
@@ -161,7 +161,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section class="text-gray-600 body-font overflow-hidden">
+        <section class="text-gray-600 body-font w-full">
           <div class="container px-5 py-24 mx-auto">
             <div class="flex flex-col">
               <div class="lg:w-1/2 w-full mb-6">
@@ -196,17 +196,14 @@ export default function Home() {
                   <span class="font-semibold title-font text-gray-700">
                     NEWS
                   </span>
-                  <span class="text-sm text-gray-500">30 Aug 2020</span>
+                  <span class="text-sm text-gray-500">25 Aug 2020</span>
                 </div>
                 <div class="md:flex-grow">
                   <h2 class="text-2xl font-medium text-gray-900 title-font mb-2">
                     MHRA Approval Granted
                   </h2>
                   <p class="leading-relaxed">
-                    Glossier echo park pug, church-key sartorial biodiesel
-                    vexillologist pop-up snackwave ramps cornhole. Marfa 3 wolf
-                    moon party messenger bag selfies, poke vaporware kombucha
-                    lumbersexual pork belly polaroid hoodie portland craft beer.
+                    We are pleased to announce we have now received the necessary regulatory approvals for the MARVEL trial.
                   </p>
                 </div>
               </div>
