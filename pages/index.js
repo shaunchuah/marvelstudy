@@ -89,6 +89,22 @@ export default function Home() {
                 <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
               </svg>
             </a>
+            <a class="ml-3 text-gray-500" href="mailto:MARVEL.Trial@ed.ac.uk" target="_blank" rel="noopener noreferrer">
+              <svg
+                class="w-5 h-5"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                ></path>
+              </svg>
+            </a>
           </span>
         </div>
       </header>
@@ -339,7 +355,7 @@ export default function Home() {
               </h2>
               <h3 class="font-medium">Email</h3>
               <p class="mb-4">
-                <a href="mailto:marvelstudy@ed.ac.uk">marvelstudy@ed.ac.uk</a>
+                <a href="mailto:MARVEL.Trial@ed.ac.uk" target="_blank" rel="noopener noreferrer">MARVEL.Trial@ed.ac.uk</a>
               </p>
 
               <h3 class="font-medium">Address</h3>
