@@ -7,6 +7,7 @@ export default function Home() {
       <Head>
         <title>MARVEL IBD Study</title>
         <link rel="icon" href="/favicon.ico" />
+        <meta name="description" content="MARVEL IBD Study. Randomised controlled trial investigating the use of mitochondrial antioxidants as a treatment for ulcerative colitis."></meta>
       </Head>
 
       <header class="text-gray-600 body-font mb-4 border-b-4 border-green-700">
