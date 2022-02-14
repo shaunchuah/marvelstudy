@@ -1,6 +1,6 @@
 export default function PublicationCard(props) {
   return (
-    <div className="max-w-prose text-lg shadow flex flex-col md:flex-row items-start gap-8 w-full border p-8 rounded-xl mb-8 ">
+    <div className="mx-auto max-w-prose text-lg shadow flex flex-col md:flex-row items-start gap-8 w-full border p-8 rounded-xl mb-8 ">
       <div className="">
         <div className="mb-4 text-sm">
           {props.publicationDate} | {props.journal}
@@ -10,7 +10,7 @@ export default function PublicationCard(props) {
         </h4>
         <p className="text-sm">{props.authors}</p>
       </div>
-      <a href={props.externalLink} target="_blank" rel="noreferrer">
+      <a href={props.externalLink} target="_blank" rel="noreferrer" alt="External link to article">
         <div className="flex-none w-16 h-16 border p-4 rounded-full hover:bg-gray-200 ">
           <svg
             fill="currentColor"

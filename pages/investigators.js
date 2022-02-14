@@ -6,7 +6,7 @@ export default function Investigators() {
   return (
     <MotionPage>
       <main className="flex flex-col items-center w-full flex-1">
-        <section className="px-5 pb-12 md:pb-24 w-full mt-12">
+        <section className="px-5 py-6 md:py-12 w-full" id="studydesign">
           <div className="flex flex-col">
             <div className="lg:w-1/2 w-full mb-6">
               <h1 className="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">
@@ -65,7 +65,7 @@ export default function Investigators() {
           </div>
         </section>
 
-        <section className="px-5 pb-12 md:pb-24 w-full mt-8" id="criteria">
+        <section className="px-5 py-6 md:py-12 w-full" id="endpoints">
           <div className="flex flex-col">
             <div className="lg:w-1/2 w-full mb-6">
               <h1 className="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">
@@ -112,7 +112,7 @@ export default function Investigators() {
             </div>
           </div>
         </section>
-        <section className="px-5 pb-12 md:pb-24 w-full mt-8" id="criteria">
+        <section className="px-5 py-6 md:py-12 w-full" id="criteria">
           <div className="flex flex-col">
             <div className="lg:w-1/2 w-full mb-6">
               <h1 className="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">
@@ -183,8 +183,8 @@ export default function Investigators() {
           </div>
         </section>
 
-        <section className="w-full">
-          <div className="px-5 py-24">
+        <section className="w-full" id="science">
+          <div className="px-5 py-6 md:py-12">
             <div className="flex flex-col">
               <div className="lg:w-1/2 w-full mb-6">
                 <h1 className="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">
@@ -210,6 +210,18 @@ export default function Investigators() {
               title="The MARVEL trial: a phase 2b randomised placebo-controlled trial of oral MitoQ in moderate ulcerative colitis"
               externalLink="https://academic.oup.com/immunotherapyadv/article/1/1/ltaa002/5985574"
             />
+          </div>
+        </section>
+        <section className="w-full" id="downloads">
+          <div className="px-5 py-6 md:py-12">
+            <div className="flex flex-col">
+              <div className="lg:w-1/2 w-full mb-6">
+                <h1 className="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">
+                  Downloads
+                </h1>
+                <div className="h-1 w-20 bg-[#008000] rounded"></div>
+              </div>
+            </div>
           </div>
         </section>
       </main>
