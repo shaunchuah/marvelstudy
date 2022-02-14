@@ -56,36 +56,56 @@ export default function Home() {
           </header>
 
           <main className="flex flex-col items-center w-full flex-1">
-            <section className="text-gray-600 body-font">
-              <div className="flex px-4 py-4 md:py-24 md:flex-row flex-col-reverse items-center">
-                <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 ">
-                  <img
-                    class="object-cover object-center rounded"
-                    alt="hero"
-                    src="https://dummyimage.com/1280x800"
-                  />
-                </div>
-                <div className="mb-10 md:mb-0 lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
-                  <Image
-                    src="/static/marvel_320x150.png"
-                    alt="MARVEL Logo"
-                    height="150"
-                    width="320"
-                  />
-                  <p className="pl-2 mb-8 leading-relaxed sm:text-2xl text-xl">
-                    Mitochondrial Antioxidant Therapy to <br />
-                    Resolve Inflammation in Ulcerative Colitis
-                  </p>
-                  <button className="ml-2 bg-[#008000] text-white hover:bg-green-600 border-0 py-2 px-6 rounded text-lg">
-                    Participant Information Sheet
-                  </button>
+            <section className="md:w-5/6 px-4 flex md:flex-row flex-col gap-8 py-4 md:py-24 items-center">
+              <div className="w-full flex flex-col md:items-start md:text-left items-center">
+                <Image
+                  src="/static/marvel_320x150.png"
+                  alt="MARVEL Logo"
+                  height="150"
+                  width="320"
+                />
+                <p className="pl-2 mb-8 leading-relaxed sm:text-2xl text-xl">
+                  Mitochondrial Antioxidant Therapy to Resolve Inflammation in
+                  Ulcerative Colitis
+                </p>
+                <button className="ml-2 bg-[#008000] text-white hover:bg-green-600 border-0 py-2 px-6 rounded text-lg">
+                  Participant Information Sheet
+                </button>
+              </div>
+              <div className="">
+                <div className="border p-8 rounded-lg  shadow-lg hover:text-[#008000] ">
+                  <a href="/static/marvel_study_overview.png" target="_blank">
+                    <Image
+                      src="/static/marvel_study_overview.png"
+                      alt="Marvel Study Design Overview"
+                      height="650"
+                      width="1920"
+                    />
+                    <div className="flex flex-row gap-1 items-center ">
+                      <div>MARVEL Overview</div>
+                      <svg
+                        class="w-5 h-5"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                        ></path>
+                      </svg>
+                    </div>
+                  </a>
                 </div>
               </div>
             </section>
 
-            <section className="text-gray-600 body-font">
-              <div className="px-5 py-24">
-                <div className="xl:w-1/2 lg:w-3/4 w-full mx-auto text-center">
+            <section className="text-gray-600 body-font px-5 py-24">
+              <div className="px-16 w-full mx-auto text-center flex flex-col lg:flex-row items-center">
+                <div className="lg:mr-24 mb-8 lg:mb-0">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="currentColor"
@@ -94,16 +114,93 @@ export default function Home() {
                   >
                     <path d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"></path>
                   </svg>
-                  <p className="leading-relaxed text-xl">
-                    In this double-blind randomised controlled trial, we are
-                    investigating the use of mitochondrial antioxidants as a
-                    treatment for ulcerative colitis.
+                  <p className="leading-relaxed text-xl max-w-prose">
+                    I'm delighted to take forward the research findings over the
+                    last 10 years from my scientific team into a human clinical
+                    trial. This has been a journey involving many scientists,
+                    clinicians and also our patients. The MARVEL study will
+                    provide very much needed data to show whether this new
+                    treatment approach will work in Ulcerative Colitis.
                   </p>
                   <span className="inline-block h-1 w-10 rounded bg-[#008000] mt-8 mb-6"></span>
-                  <h2 className="text-gray-900 font-medium title-font tracking-wider text-sm">
-                    GWO-TZER HO
+                  <h2 className="text-gray-900 font-semibold title-font tracking-wider">
+                    DR GWO-TZER HO
                   </h2>
-                  <p className="text-gray-500">Chief Investigator</p>
+                  <p className="text-gray-500">
+                    Chief Investigator <br /> Centre for Inflammation Research{" "}
+                    <br /> University of Edinburgh
+                  </p>
+                </div>
+                <div className="flex-none">
+                  <Image
+                    src="/static/gth.jpg"
+                    alt="Gwo Tzer Ho"
+                    height="600"
+                    width="400"
+                    className="rounded-lg"
+                  />
+                </div>
+              </div>
+            </section>
+
+            <section className="px-5 py-12 md:py-24 w-full">
+              <div className="flex flex-col">
+                <div className="lg:w-1/2 w-full mb-6">
+                  <h1 className="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">
+                    Overview
+                  </h1>
+                  <div className="h-1 w-20 bg-[#008000] rounded"></div>
+                </div>
+              </div>
+              <div className=" py-16">
+                <div className="bg-white border-2 p-4 rounded-lg  shadow-lg">
+                  <h2>Lisa Derr, Trial Manager</h2>
+                  <audio id="marvel_intro" controls className="mb-3">
+                    <source
+                      src="/static/marvel_introduction.mp4"
+                      type="audio/mpeg"
+                    />
+                    Your browser does not support the audio element.
+                  </audio>
+                </div>
+              </div>
+              <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-4">
+                <div className="border shadow-lg rounded p-4">
+                  <h2 className="text-xl uppercase tracking-wider font-semibold text-[#008000] mb-2">
+                    Design
+                  </h2>
+                  <p>
+                    MARVEL is a randomised, double-blind, multi-centre trial in
+                    patients with a moderate flare of ulcerative colitis.
+                  </p>
+                </div>
+                <div className="border shadow-lg rounded p-4">
+                  <h2 className="text-xl uppercase tracking-wider font-semibold text-[#008000] mb-2">
+                    Aims
+                  </h2>
+                  <p>
+                    MARVEL aims to test the validity of mitochondrial
+                    antioxidant therapy in the context of a UC flare.
+                  </p>
+                </div>
+                <div className="border shadow-lg rounded p-4">
+                  <h2 className="text-xl uppercase tracking-wider font-semibold text-[#008000] mb-2">
+                    Setting
+                  </h2>
+                  <p>
+                    MARVEL will initially open in Edinburgh, Glasgow and Dundee
+                    with a plan for 20 sites in total across the UK.
+                  </p>
+                </div>
+                <div className="border shadow-lg rounded p-4">
+                  <h2 className="text-xl uppercase tracking-wider font-semibold text-[#008000] mb-2">
+                    Population
+                  </h2>
+                  <p>
+                    MARVEL plans to recruit 250 adult patients. In parallel with
+                    our paediatric trial MiniMARVEL, this will form the first
+                    ever all ages IBD trial.
+                  </p>
                 </div>
               </div>
             </section>
