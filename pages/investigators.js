@@ -1,4 +1,5 @@
 import Image from "next/image";
+import PublicationCard from "../components/PublicationCard";
 
 export default function Investigators() {
   return (
@@ -94,7 +95,7 @@ export default function Investigators() {
         </div>
       </section>
 
-      <section className="text-gray-600 body-font">
+      <section className="w-full">
         <div className="px-5 py-24">
           <div className="flex flex-col">
             <div className="lg:w-1/2 w-full mb-6">
@@ -104,47 +105,23 @@ export default function Investigators() {
               <div className="h-1 w-20 bg-[#008000] rounded"></div>
             </div>
           </div>
-          <div className="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4">
-            <div className="p-4 md:w-1/3 sm:mb-0 mb-6">
-              <div className="rounded-lg h-64 overflow-hidden">
-                <Image
-                  src="/static/glasgow.jpg"
-                  alt="Glasgow"
-                  height="667"
-                  width="1000"
-                />
-              </div>
-              <h2 className="text-xl font-medium title-font text-gray-900 mt-5">
-                Glasgow
-              </h2>
-            </div>
-            <div className="p-4 md:w-1/3 sm:mb-0 mb-6">
-              <div className="rounded-lg h-64 overflow-hidden">
-                <Image
-                  src="/static/edinburgh.jpg"
-                  alt="Edinburgh"
-                  height="667"
-                  width="1000"
-                />
-              </div>
-              <h2 className="text-xl font-medium title-font text-gray-900 mt-5">
-                Edinburgh
-              </h2>
-            </div>
-            <div className="p-4 md:w-1/3 sm:mb-0 mb-6">
-              <div className="rounded-lg h-64 overflow-hidden">
-                <Image
-                  src="/static/dundee.jpg"
-                  alt="Dundee"
-                  height="667"
-                  width="1000"
-                />
-              </div>
-              <h2 className="text-xl font-medium title-font text-gray-900 mt-5">
-                Dundee
-              </h2>
-            </div>
-          </div>
+
+          <PublicationCard
+            publicationDate="10 Feb 2022"
+            journal="Annual Review of Physiology"
+            authors="Gwo-Tzer Ho, Arianne L. Theiss"
+            title="Mitochondria and Inflammatory Bowel Diseases: Toward a Stratified Therapeutic Intervention
+            Annual Review of Physiology"
+            externalLink="https://doi.org/10.1146/annurev-physiol-060821-083306"
+          />
+
+          <PublicationCard
+            publicationDate="12 November 2020"
+            journal="Immunotherapy Advances"
+            authors="Emily Gwyer Findlay, Greg Sutton, Gwo-Tzer Ho, BSI Inflammation Affinity Group Trialswatch Team"
+            title="The MARVEL trial: a phase 2b randomised placebo-controlled trial of oral MitoQ in moderate ulcerative colitis"
+            externalLink="https://academic.oup.com/immunotherapyadv/article/1/1/ltaa002/5985574"
+          />
         </div>
       </section>
     </main>

@@ -5,7 +5,7 @@ export default function Header() {
   return (
     <header>
       <div className="flex justify-between flex-wrap p-4 flex-col md:flex-row items-center border-b-2 border-[#008000]">
-        <a className="flex items-center sm:mr-5 sm:pb-1 pb-2" href="/">
+        <a className="hidden sm:block flex items-center sm:mr-5 sm:pb-1 pb-2 mb-2 sm:mb-0" href="/">
           <Image
             src="/static/marvellogo.png"
             alt="MARVEL Logo"
@@ -13,7 +13,7 @@ export default function Header() {
             width="109"
           />
         </a>
-        <nav className="flex items-center justify-center gap-6 sm:text-xl">
+        <nav className="flex flex-wrap items-center justify-center gap-4 md:gap-6 sm:text-xl">
           <Link href="/">
             <a className="flex flex-row items-center gap-1 hover:text-[#008000]">
               <svg
