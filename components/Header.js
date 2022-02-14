@@ -5,7 +5,7 @@ export default function Header() {
   return (
     <header>
       <div className="flex justify-between flex-wrap p-4 flex-col md:flex-row items-center border-b-2 border-[#008000]">
-        <a className="hidden sm:block flex items-center sm:mr-5 sm:pb-1 pb-2 mb-2 sm:mb-0" href="/">
+        <a className="hidden sm:flex items-center sm:mr-5 sm:pb-1 pb-2 mb-2 sm:mb-0" href="/">
           <Image
             src="/static/marvellogo.png"
             alt="MARVEL Logo"
