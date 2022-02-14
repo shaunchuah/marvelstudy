@@ -1,16 +1,28 @@
 # MARVEL Study Website
 
+Website for MARVEL IBD study.
+
 ## Framework
 
 - NextJS
 - TailwindCSS
 
-## Development
+## Development Setup
+
+Install nodejs.
 
 ```sh
-yarn dev
+npm install
+npm run dev
 ```
 
 ## Deployment Plan
 
-AWS Amplify
+Vercel
+
+## Project Structure
+
+- `design/` All design assets
+- `pages/` NextJS routes
+- `public/` All static assets
+- `styles/` Globals.css to initialize TailwindCSS

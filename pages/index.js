@@ -5,7 +5,10 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>MARVEL IBD Study</title>
+        <title>
+          MARVEL IBD - Mitochondrial Antioxidant Therapy to Resolve Inflammation
+          in Ulcerative Colitis
+        </title>
         <link rel="icon" href="/favicon.ico" />
         <link
           rel="apple-touch-icon"
@@ -31,19 +34,23 @@ export default function Home() {
         ></meta>
       </Head>
       <div className="flex flex-col bg-gray-100">
-        <div className="container mx-auto bg-white text-gray-800 shadow-lg sm:px-4 sm: py-2 sm:rounded-xl sm:my-2 lg:py-4 lg:rounded-2xl lg:my-4 lg:px-8  ">
+        <div className="container mx-auto bg-white text-gray-800 shadow-lg sm:px-4 sm:py-2 sm:rounded-xl sm:mt-2 lg:py-4 lg:rounded-2xl lg:mt-4 mb-24 lg:px-8  ">
           <header className="mb-4">
-            <div className="flex flex-wrap p-4 flex-col md:flex-row items-center border-b-2 border-[#008000]">
-              <nav className="flex items-center justify-center sm:text-lg">
-                <a className="flex items-center mr-5 pb-1" href="/">
-                  <Image
-                    src="/static/marvellogo.png"
-                    alt="MARVEL Logo"
-                    height="51"
-                    width="109"
-                  />
-                </a>
-                {/* <a class="mr-5 text-gray-400">Trial Results</a> */}
+            <div className="flex justify-between flex-wrap p-4 flex-col md:flex-row items-center border-b-2 border-[#008000]">
+              <a className="flex items-center sm:mr-5 sm:pb-1 pb-2" href="/">
+                <Image
+                  src="/static/marvellogo.png"
+                  alt="MARVEL Logo"
+                  height="51"
+                  width="109"
+                />
+              </a>
+              <nav className="flex items-center justify-center sm:text-xl">
+                <a class="mr-5 ">Home</a>
+                <a class="mr-5 ">Participants</a>
+                <a class="mr-5 ">Investigators</a>
+                <a class="mr-5 ">Results</a>
+                <a class="mr-5 ">Contacts</a>
               </nav>
             </div>
           </header>
