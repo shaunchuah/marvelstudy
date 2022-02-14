@@ -12,6 +12,7 @@ export default function Home() {
               alt="MARVEL Logo"
               height="150"
               width="320"
+              priority={true}
             />
           </div>
           <p className="pl-2 mt-2 mb-12 md:mb-4 text-center md:text-left leading-relaxed sm:text-2xl text-xl">
@@ -78,6 +79,7 @@ export default function Home() {
                 alt="Marvel Study Design Overview"
                 height="650"
                 width="1920"
+                priority={true}
               />
               <div className="flex flex-row gap-1 items-center ">
                 <div>MARVEL Overview</div>
