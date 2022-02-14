@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function Home() {
   return (
     <main className="flex flex-col items-center w-full flex-1">
-      <section className="px-4 flex md:flex-row flex-col gap-8 py-12 md:py-24 items-center">
+      <section className="px-4 flex md:flex-row flex-col gap-8 py-6 md:py-12 items-center">
         <div className="md:pl-16 md:w-1/2 flex-none flex flex-col md:items-start md:text-left items-center">
           <div className="pt-8 md:pt-0 w-1/2 md:w-full">
             <Image
@@ -12,6 +12,7 @@ export default function Home() {
               alt="MARVEL Logo"
               height="150"
               width="320"
+              priority={true}
             />
           </div>
           <p className="pl-2 mt-2 mb-12 md:mb-4 text-center md:text-left leading-relaxed sm:text-2xl text-xl">
@@ -31,7 +32,7 @@ export default function Home() {
             </Link>
           </div>
           <a
-            className="p-2 mt-12 md:mt-24 text-center md:text-left text-gray-500 hover:text-[#008000]"
+            className="p-2 mt-12 md:mt-16 text-center md:text-left text-gray-500 hover:text-[#008000]"
             href="https://www.ed.ac.uk/inflammation-research/research/gut-research-unit"
             target="_blank"
             rel="noopener noreferrer">
@@ -78,6 +79,7 @@ export default function Home() {
                 alt="Marvel Study Design Overview"
                 height="650"
                 width="1920"
+                priority={true}
               />
               <div className="flex flex-row gap-1 items-center ">
                 <div>MARVEL Overview</div>
@@ -99,7 +101,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="px-5 py-12 md:py-24">
+      <section className="px-5 py-6 md:py-12">
         <div className="px-0 md:px-16 w-full mx-auto text-center flex flex-col lg:flex-row items-center">
           <div className="lg:mr-24 mb-8 lg:mb-0">
             <svg
@@ -139,7 +141,7 @@ export default function Home() {
       </section>
 
       <section className="text-gray-600 body-font">
-        <div className="px-5 py-12 md:py-24">
+        <div className="px-5 py-6 md:py-12">
           <div className="flex flex-col">
             <div className="lg:w-1/2 w-full mb-6">
               <h1 className="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">
@@ -158,7 +160,7 @@ export default function Home() {
                   width="1000"
                 />
               </div>
-              <h2 className="text-xl font-medium title-font text-gray-900 mt-5">
+              <h2 className="text-xl font-medium title-font text-gray-900">
                 Glasgow
               </h2>
             </div>
@@ -171,7 +173,7 @@ export default function Home() {
                   width="1000"
                 />
               </div>
-              <h2 className="text-xl font-medium title-font text-gray-900 mt-5">
+              <h2 className="text-xl font-medium title-font text-gray-900">
                 Edinburgh
               </h2>
             </div>
@@ -184,7 +186,7 @@ export default function Home() {
                   width="1000"
                 />
               </div>
-              <h2 className="text-xl font-medium title-font text-gray-900 mt-5">
+              <h2 className="text-xl font-medium title-font text-gray-900">
                 Dundee
               </h2>
             </div>
@@ -193,7 +195,7 @@ export default function Home() {
       </section>
 
       <section className="text-gray-600 body-font">
-        <div className="px-5 py-12 md:py-24">
+        <div className="px-5 py-6 md:py-12">
           <div className="flex flex-wrap w-full mb-6">
             <div className="lg:w-1/2 w-full mb-6 lg:mb-0">
               <h1 className="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">

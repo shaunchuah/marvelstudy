@@ -9,7 +9,7 @@ export default function Footer() {
             <h2 className="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">
               USEFUL LINKS
             </h2>
-            <nav className="list-none mb-10">
+            <ul className="list-none mb-10">
               <li>
                 <a
                   className="text-gray-600 hover:text-[#008000]"
@@ -26,7 +26,7 @@ export default function Footer() {
                   RedCap
                 </a>
               </li>
-            </nav>
+            </ul>
           </div>
 
           <div className="lg:w-1/3 md:w-1/2 w-full px-4">
@@ -62,7 +62,7 @@ export default function Footer() {
             <h2 className="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">
               LEGAL
             </h2>
-            <nav className="list-none mb-10">
+            <ul className="list-none mb-10">
               <li>
                 <a
                   className="text-gray-600 hover:text-[#008000]"
@@ -113,7 +113,7 @@ export default function Footer() {
                   Accessibility
                 </a>
               </li>
-            </nav>
+            </ul>
           </div>
         </div>
       </div>

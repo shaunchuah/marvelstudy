@@ -36,7 +36,7 @@ export default function Layout({ children }) {
         ></meta>
       </Head>
       <div className="flex flex-col bg-gray-100">
-        <div className="container mx-auto bg-white text-gray-800 shadow-lg sm:px-4 sm:py-2 sm:rounded-xl sm:mt-2 lg:py-4 lg:rounded-2xl lg:mt-4 mb-24 lg:px-8  ">
+        <div className="container mx-auto bg-white text-gray-800 border shadow-lg mb-24 md:mt-4 rounded-lg md:py-4 md:px-8">
           <Header />
           {children}
           <Footer />
