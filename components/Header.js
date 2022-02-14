@@ -91,7 +91,7 @@ export default function Header() {
           </a>
           </Link>
           <a
-            className="flex flex-row items-center gap-1 hover:text-[#008000]"
+            className="hidden md:flex flex-row items-center gap-1 hover:text-[#008000]"
             href="mailto:MARVEL.Trial@ed.ac.uk"
             target="_blank"
             rel="noopener noreferrer"

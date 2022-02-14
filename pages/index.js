@@ -4,9 +4,9 @@ import Link from "next/link";
 export default function Home() {
   return (
     <main className="flex flex-col items-center w-full flex-1">
-      <section className="px-4 flex md:flex-row flex-col gap-8 py-8 md:py-24 items-center">
+      <section className="px-4 flex md:flex-row flex-col gap-8 py-12 md:py-24 items-center">
         <div className="md:pl-16 md:w-1/2 flex-none flex flex-col md:items-start md:text-left items-center">
-          <div className="w-1/2">
+          <div className="pt-8 md:pt-0 w-1/2 md:w-full">
             <Image
               src="/static/marvel_320x150.png"
               alt="MARVEL Logo"
@@ -14,7 +14,7 @@ export default function Home() {
               width="320"
             />
           </div>
-          <p className="pl-2 mt-2 mb-4 leading-relaxed sm:text-2xl text-xl">
+          <p className="pl-2 mt-2 mb-12 md:mb-4 text-center md:text-left leading-relaxed sm:text-2xl text-xl">
             Mitochondrial Antioxidant Therapy to Resolve Inflammation in
             Ulcerative Colitis
           </p>
@@ -99,8 +99,8 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="text-gray-600 body-font px-5 py-12 md:py-24">
-        <div className="px-16 w-full mx-auto text-center flex flex-col lg:flex-row items-center">
+      <section className="px-5 py-12 md:py-24">
+        <div className="px-0 md:px-16 w-full mx-auto text-center flex flex-col lg:flex-row items-center">
           <div className="lg:mr-24 mb-8 lg:mb-0">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -109,7 +109,7 @@ export default function Home() {
               viewBox="0 0 975.036 975.036">
               <path d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"></path>
             </svg>
-            <p className="leading-relaxed text-xl max-w-prose">
+            <p className="leading-relaxed text-xl sm:max-w-prose">
               I'm delighted to take forward the research findings over the last
               10 years from my scientific team into a human clinical trial. This
               has been a journey involving many scientists, clinicians and also
