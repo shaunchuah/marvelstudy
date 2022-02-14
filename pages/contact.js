@@ -13,7 +13,7 @@ export default function Contact() {
           </div>
         </div>
         <div className="flex flex-col items-center justify-center text-2xl h-96">
-          <div className="text-xl mb-2">
+          <div className="text-xl text-center mb-2">
             For any trial-related queries, please email
           </div>
           <div>
