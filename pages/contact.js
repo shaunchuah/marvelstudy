@@ -8,7 +8,7 @@ export default function Contact() {
       <main className="flex flex-col w-full">
         <SectionWrapper id="contact">
           <SectionHeader title="Contact" />
-          <div className="flex flex-col items-center justify-center text-2xl h-96">
+          <div className="flex flex-col items-center justify-center text-xl h-96">
             <div className="text-xl text-center mb-2">
               For any trial-related queries, please contact:
             </div>

@@ -187,7 +187,7 @@ export default function Investigators() {
         <SectionWrapper id="science">
           <SectionHeader title="Scientific Basis" />
           <PublicationCard
-            publicationDate="10 Feb 2022"
+            publicationDate="10 February 2022"
             journal="Annual Review of Physiology"
             authors="Gwo-Tzer Ho, Arianne L. Theiss"
             title="Mitochondria and Inflammatory Bowel Diseases: Toward a Stratified Therapeutic Intervention
