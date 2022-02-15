@@ -76,18 +76,13 @@ export default function Home() {
             </div>
           </div>
           <div className="border p-8 rounded-lg  shadow-lg hover:text-[#008000]  ">
-            <Link href="/investigators">
-              <a>
-                <Image
-                  src="/static/marvel_study_overview.png"
-                  alt="Marvel Study Design Overview"
-                  height="650"
-                  width="1920"
-                  priority={true}
-                />
-                
-              </a>
-            </Link>
+            <Image
+              src="/static/marvel_study_overview.png"
+              alt="Marvel Study Design Overview"
+              height="650"
+              width="1920"
+              priority={true}
+            />
           </div>
         </div>
       </section>
@@ -132,7 +127,6 @@ export default function Home() {
         </div>
       </section>
 
-      
       <section className="text-gray-600 body-font">
         <div className="px-5 py-6 md:py-12">
           <div className="flex flex-wrap w-full mb-6">
@@ -239,7 +233,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
     </main>
   );
 }
