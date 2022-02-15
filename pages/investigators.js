@@ -108,7 +108,7 @@ export default function Investigators() {
               <h2 className="text-xl uppercase tracking-wider font-semibold text-[#008000] mb-2">
                 Secondary
               </h2>
-              <ul className="list-disc list-outside pl-4 text-lg">
+              <ul className="list-disc list-outside ml-4 pl-4 text-lg">
                 <li>Clinical remission at week 12</li>
                 <li>Clinical response and remission at week 24</li>
                 <li>Mucosal healing</li>
@@ -130,7 +130,7 @@ export default function Investigators() {
               <h2 className="text-xl uppercase tracking-wider font-semibold text-[#008000] mb-2">
                 Inclusion
               </h2>
-              <ul className="list-disc list-outside pl-4 text-lg">
+              <ul className="list-disc list-outside ml-4 pl-4 text-lg">
                 <li>Active UC</li>
                 <li>&ge;18 years old (miniMARVEL for under 18s)</li>
                 <li>Established diagnosis of UC for &ge;3 months</li>
@@ -149,7 +149,7 @@ export default function Investigators() {
               <h2 className="text-xl uppercase tracking-wider font-semibold text-[#008000] mb-2">
                 Exclusion
               </h2>
-              <ul className="list-disc list-outside pl-4 text-lg">
+              <ul className="list-disc list-outside ml-4 pl-4 text-lg">
                 <li>
                   Severe extensive colitis likely to require hospitalisation or
                   surgery

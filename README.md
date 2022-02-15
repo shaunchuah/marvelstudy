@@ -6,6 +6,7 @@ Website for MARVEL IBD study.
 
 - NextJS
 - TailwindCSS
+- Framer Motion
 
 ## Development Setup
 
@@ -26,3 +27,4 @@ Vercel
 - `pages/` NextJS routes
 - `public/` All static assets
 - `styles/` Globals.css to initialize TailwindCSS
+- `components/` All reusable components
