@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import SectionHeader from "../components/SectionHeader";
 import SectionWrapper from "../components/SectionWrapper";
+import NameCard from "../components/NameCard";
 
 export default function Home() {
   return (
@@ -65,17 +66,28 @@ export default function Home() {
           </div>
           <div className="lg:px-8">
             <div className="pb-8">
-              <div className="bg-white border p-8 rounded-lg shadow">
-                <h2 className="text-2xl mb-4">Introducing MARVEL</h2>
-
-                <audio id="marvel_intro" controls className="mb-4">
-                  <source
-                    src="/static/marvel_introduction.mp4"
-                    type="audio/mpeg"
+              <div className="bg-white border p-6 rounded-lg shadow flex flex-wrap gap-4 justify-center lg:justify-start items-start">
+                <div className="w-1/3 flex-none">
+                  <Image
+                    src="/static/podcast.jpg"
+                    alt="Lisa Derr introducing MARVEL"
+                    height="1024"
+                    width="1024"
+                    priority={true}
+                    className="rounded-lg"
                   />
-                  Your browser does not support the audio element.
-                </audio>
-                <p>By Lisa Derr, Trial Manager</p>
+                </div>
+                <div className="text-center lg:text-left">
+                  <h2 className="text-xl">Introducing MARVEL</h2>
+                  <p className="mb-6 text-sm">By Lisa Derr, Trial Manager</p>
+                  <audio id="marvel_intro" controls className="mb-4">
+                    <source
+                      src="/static/marvel_introduction.mp4"
+                      type="audio/mpeg"
+                    />
+                    Your browser does not support the audio element.
+                  </audio>
+                </div>
               </div>
             </div>
             <div className="border p-8 rounded-lg  shadow-lg hover:text-[#008000]  ">
@@ -176,7 +188,7 @@ export default function Home() {
       </SectionWrapper>
 
       <SectionWrapper id="centres">
-        <SectionHeader title="Participating Centres" />
+        <SectionHeader title="Current Participating Centres" />
         <div className="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4">
           <div className="p-4 md:w-1/3 sm:mb-0 mb-6">
             <div className="rounded-lg h-64 overflow-hidden mb-2">
@@ -217,6 +229,35 @@ export default function Home() {
               Dundee
             </h2>
           </div>
+        </div>
+        <div className="text-center font-medium text-2xl py-4 lg:py-6 mt-8 border-2 border-[#008000] text-[#008000] rounded-lg">
+          More centres to follow... Stay tuned.
+        </div>
+      </SectionWrapper>
+      <SectionWrapper id="team">
+        <SectionHeader title="About Us" />
+        <div className="grid lg:grid-cols-3 gap-4">
+          <NameCard name="Dr Gwo-Tzer Ho" position="Chief Investigator" />
+          <NameCard
+            name="Professor Chris Probert"
+            position="Chair, Trial Steering Committee"
+          />
+          <NameCard
+            name="Professor Jonathan Rhodes"
+            position="Chair, Data Monitoring Committee"
+          />
+          <NameCard
+            name="Dr Rebecca Hall"
+            position="Clinical Research Fellow"
+          />
+          <NameCard
+            name="Dr Shaun Chuah"
+            position="Clinical Research Fellow"
+          />
+          <NameCard name="Beena Pouloose" position="Clinical Research Nurse" />
+          <NameCard name="Athena Oddy" position="Clinical Research Nurse" />
+          <NameCard name="Lisa Derr" position="Trial Manager" />
+          <NameCard name="Katherine Lewis" position="Trial Manager" />
         </div>
       </SectionWrapper>
     </main>

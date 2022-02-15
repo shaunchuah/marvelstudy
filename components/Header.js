@@ -3,19 +3,24 @@ import Link from "next/link";
 
 export default function Header() {
   return (
-    <header>
+    <header className="relative">
       <div className="flex justify-between flex-wrap px-5 p-4 flex-col md:flex-row items-center border-b-2">
-        <Link href="/">
-          <a className="hidden lg:flex items-center mr-5 pb-1">
-            <Image
-              src="/static/marvellogo.png"
-              alt="MARVEL Logo"
-              height="51"
-              width="109"
-              priority={true}
-            />
-          </a>
-        </Link>
+        <div className="flex items-center">
+          <Link href="/">
+            <a className="hidden lg:flex items-center mr-5 pb-1">
+              <Image
+                src="/static/marvellogo.png"
+                alt="MARVEL Logo"
+                height="51"
+                width="109"
+                priority={true}
+              />
+            </a>
+          </Link>
+          <span className="rounded-lg uppercase shadow-lg tracking-wider text-center text-xs bg-gradient-to-r from-cyan-500 to-indigo-700 text-white px-4 py-2 mb-4 lg:mb-0">
+            Pre-Recruitment
+          </span>
+        </div>
         <nav className="flex flex-wrap items-center justify-center gap-4 md:gap-6 sm:text-xl">
           <Link href="/">
             <a className="flex flex-row items-center gap-1 hover:text-[#008000]">

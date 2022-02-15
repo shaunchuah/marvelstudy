@@ -8,26 +8,6 @@ export default function Footer() {
         <div className="flex flex-wrap lg:text-left text-center order-first">
           <div className="lg:w-1/3 md:w-1/2 w-full px-4">
             <h2 className="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">
-              USEFUL LINKS
-            </h2>
-            <div className="flex flex-col mb-4 lg:mb-0">
-              <a
-                className="py-1 lg:py-0 border rounded-lg lg:border-0 hover:text-[#008000] mb-2 lg:mb-0"
-                href="https://samples.musicstudy.uk"
-              >
-                G-Trac
-              </a>
-              <a
-                className="py-1 lg:py-0 border rounded-lg lg:border-0 hover:text-[#008000] mb-2 lg:mb-0"
-                href="https://ecrf.igmm.ed.ac.uk/index.php?action=myprojects"
-              >
-                RedCap
-              </a>
-            </div>
-          </div>
-
-          <div className="lg:w-1/3 md:w-1/2 w-full px-4">
-            <h2 className="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">
               CONTACT DETAILS
             </h2>
             <h3 className="font-bold">Email</h3>
@@ -41,8 +21,12 @@ export default function Footer() {
                 MARVEL.Trial@ed.ac.uk
               </a>
             </p>
+          </div>
+          <div className="lg:w-1/3 md:w-1/2 w-full px-4">
+            <h2 className="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">
+              ADDRESS
+            </h2>
 
-            <h3 className="font-bold">Address</h3>
             <p className="mb-10">
               Gut Research Unit
               <br />
@@ -55,6 +39,7 @@ export default function Footer() {
               Edinburgh EH16 4TJ
             </p>
           </div>
+
           <div className="lg:w-1/3 md:w-1/2 w-full px-4">
             <h2 className="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">
               LEGAL
@@ -117,7 +102,7 @@ export default function Footer() {
             </a>
           </Link>
           <p className="text-sm text-gray-500 lg:ml-6 lg:mt-0 mt-4">
-            © 2022 MARVEL Research Team
+            © 2022 MARVEL Research Team. <br/>Last Updated Feb 2022
           </p>
         </div>
       </div>

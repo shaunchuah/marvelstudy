@@ -75,9 +75,7 @@ export default function Investigators() {
                 Population
               </h2>
               <p>
-                MARVEL plans to recruit 250 adult patients. In parallel with our
-                paediatric trial MiniMARVEL, this will form the first ever all
-                ages IBD trial.
+                MARVEL plans to recruit 250 adult patients.
               </p>
             </div>
           </div>
@@ -132,7 +130,7 @@ export default function Investigators() {
               </h2>
               <ul className="list-disc list-outside ml-4 pl-4 text-lg">
                 <li>Active UC</li>
-                <li>&ge;18 years old (miniMARVEL for under 18s)</li>
+                <li>&ge;18 years old</li>
                 <li>Established diagnosis of UC for &ge;3 months</li>
                 <li>Able and willing to give informed consent</li>
                 <li>
