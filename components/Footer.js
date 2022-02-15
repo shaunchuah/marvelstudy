@@ -101,7 +101,7 @@ export default function Footer() {
               />
             </a>
           </Link>
-          <p className="text-sm text-gray-500 lg:ml-6 lg:mt-0 mt-4">
+          <p className="text-center lg:text-left text-sm text-gray-500 lg:ml-6 lg:mt-0 mt-4">
             © 2022 MARVEL Research Team. <br/>Last Updated Feb 2022
           </p>
         </div>

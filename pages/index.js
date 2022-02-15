@@ -3,8 +3,18 @@ import Link from "next/link";
 import SectionHeader from "../components/SectionHeader";
 import SectionWrapper from "../components/SectionWrapper";
 import NameCard from "../components/NameCard";
+import { useEffect } from "react";
 
 export default function Home() {
+  const consoleStyle =
+    "border-radius:5px; padding: 8px; background: #065f46; color: #fff; font-size: 14px";
+
+  console.log("%cWelcome to the MARVEL study website!", consoleStyle);
+  console.log(
+    "%cWebsite created by Dr Shaun Chuah using NextJS. For website-related queries please get in touch via twitter https://twitter.com/chershiong",
+    consoleStyle
+  );
+
   return (
     <main className="flex flex-col w-full">
       <SectionWrapper id="hero">
