@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function Header() {
   return (
     <header>
-      <div className="flex justify-between flex-wrap p-4 flex-col md:flex-row items-center border-b-2 border-[#008000]">
+      <div className="flex justify-between flex-wrap px-5 p-4 flex-col md:flex-row items-center border-b-2">
         <a
           className="hidden sm:flex items-center sm:mr-5 sm:pb-1 pb-2 mb-2 sm:mb-0"
           href="/">

@@ -35,7 +35,7 @@ export default function Layout({ children }) {
           content="MARVEL IBD Study. Randomised controlled trial investigating the use of mitochondrial antioxidants as a treatment for ulcerative colitis."
         ></meta>
       </Head>
-      <div className="flex flex-col bg-gray-100">
+      <div className="flex flex-col bg-gradient-to-b from-gray-100 to-white min-h-screen">
         <div className="container mx-auto bg-white text-gray-800 border shadow-lg mb-24 md:mt-4 rounded-lg md:py-4 md:px-8">
           <Header />
           {children}
