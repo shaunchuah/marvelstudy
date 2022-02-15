@@ -20,7 +20,7 @@ export default function Contact() {
                 rel="noopener noreferrer"
               >
                 <svg
-                  class="w-8 h-8 mr-1"
+                  className="w-8 h-8 mr-1"
                   fill="currentColor"
                   viewBox="0 0 20 20"
                   xmlns="http://www.w3.org/2000/svg"

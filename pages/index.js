@@ -10,7 +10,7 @@ export default function Home() {
       <SectionWrapper id="hero">
         <div className="flex lg:flex-row flex-col gap-8 items-center">
           <div className="lg:pl-16 lg:w-1/2 flex-none flex flex-col lg:items-start lg:text-left items-center">
-            <div className="pt-8 lg:pt-0 w-1/2 lg:w-full">
+            <div className="pt-6 lg:pt-0 w-1/2 lg:w-full">
               <Image
                 src="/static/marvel_320x150.png"
                 alt="MARVEL Logo"
@@ -23,7 +23,7 @@ export default function Home() {
               Mitochondrial Antioxidant Therapy to Resolve Inflammation in
               Ulcerative Colitis
             </p>
-            <div className="flex flex-row items-center gap-2">
+            <div className="flex flex-col md:flex-row items-center gap-2">
               <Link href="/participants">
                 <button className="ml-2 border-2 border-[#008000] bg-[#008000] text-white hover:text-[#008000] hover:bg-green-100 py-2 px-6 rounded text-lg">
                   For Participants
@@ -36,7 +36,7 @@ export default function Home() {
               </Link>
             </div>
             <a
-              className="p-2 mt-12 md:mt-16 text-center md:text-left text-gray-500 hover:text-[#008000]"
+              className="p-2 mt-12 text-center md:text-left text-gray-500 hover:text-[#008000]"
               href="https://www.ed.ac.uk/inflammation-research/research/gut-research-unit"
               target="_blank"
               rel="noopener noreferrer"
@@ -189,54 +189,51 @@ export default function Home() {
 
       <SectionWrapper id="centres">
         <SectionHeader title="Current Participating Centres" />
-        <div className="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4">
-          <div className="p-4 md:w-1/3 sm:mb-0 mb-6">
-            <div className="rounded-lg h-64 overflow-hidden mb-2">
+        <div className="grid lg:grid-cols-3 gap-8 mb-4">
+          <div>
+            <div>
               <Image
                 src="/static/glasgow.jpg"
                 alt="Glasgow"
                 height="667"
                 width="1000"
+                className="rounded-lg"
               />
             </div>
-            <h2 className="text-xl font-medium title-font text-gray-900">
-              Glasgow
-            </h2>
+            <h2 className="text-xl font-medium title-font">Glasgow</h2>
           </div>
-          <div className="p-4 md:w-1/3 sm:mb-0 mb-6">
-            <div className="rounded-lg h-64 overflow-hidden mb-2">
+          <div>
+            <div>
               <Image
                 src="/static/edinburgh.jpg"
                 alt="Edinburgh"
                 height="667"
                 width="1000"
+                className="rounded-lg"
               />
             </div>
-            <h2 className="text-xl font-medium title-font text-gray-900">
-              Edinburgh
-            </h2>
+            <h2 className="text-xl font-medium title-font">Edinburgh</h2>
           </div>
-          <div className="p-4 md:w-1/3 sm:mb-0 mb-6">
-            <div className="rounded-lg h-64 overflow-hidden mb-2">
+          <div>
+            <div>
               <Image
                 src="/static/dundee.jpg"
                 alt="Dundee"
                 height="667"
                 width="1000"
+                className="rounded-lg"
               />
             </div>
-            <h2 className="text-xl font-medium title-font text-gray-900">
-              Dundee
-            </h2>
+            <h2 className="text-xl font-medium title-font">Dundee</h2>
           </div>
         </div>
-        <div className="text-center font-medium text-2xl py-4 lg:py-6 mt-8 border-2 border-[#008000] text-[#008000] rounded-lg">
+        <div className="text-center font-medium text-xl lg:text-2xl py-4 px-4 lg:py-6 mt-8 border-2 border-[#008000] text-[#008000] rounded-lg">
           More centres to follow... Stay tuned.
         </div>
       </SectionWrapper>
       <SectionWrapper id="team">
         <SectionHeader title="About Us" />
-        <div className="grid lg:grid-cols-3 gap-4">
+        <div className="grid lg:grid-cols-3 gap-4 lg:gap-8">
           <NameCard name="Dr Gwo-Tzer Ho" position="Chief Investigator" />
           <NameCard
             name="Professor Chris Probert"
@@ -250,10 +247,7 @@ export default function Home() {
             name="Dr Rebecca Hall"
             position="Clinical Research Fellow"
           />
-          <NameCard
-            name="Dr Shaun Chuah"
-            position="Clinical Research Fellow"
-          />
+          <NameCard name="Dr Shaun Chuah" position="Clinical Research Fellow" />
           <NameCard name="Beena Pouloose" position="Clinical Research Nurse" />
           <NameCard name="Athena Oddy" position="Clinical Research Nurse" />
           <NameCard name="Lisa Derr" position="Trial Manager" />
