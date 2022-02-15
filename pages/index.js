@@ -261,7 +261,7 @@ export default function Home() {
           <NameCard name="Beena Pouloose" position="Clinical Research Nurse" />
           <NameCard name="Athena Oddy" position="Clinical Research Nurse" />
           <NameCard name="Lisa Derr" position="Trial Manager" />
-          <NameCard name="Katherine Lewis" position="Trial Manager" />
+          <NameCard name="Katherine Lewis" position="Trial Support Officer" />
         </div>
       </SectionWrapper>
     </main>
