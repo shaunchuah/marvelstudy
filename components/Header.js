@@ -3,11 +3,11 @@ import Link from "next/link";
 
 export default function Header() {
   return (
-    <header className="relative">
-      <div className="flex justify-between flex-wrap px-5 p-4 flex-col md:flex-row items-center border-b-2">
-        <div className="flex items-center">
+    <header>
+      <div className="flex justify-between flex-wrap px-5 p-4 flex-col lg:flex-row items-center border-b-2">
+        <div className="flex items-center mb-4 lg:mb-0">
           <Link href="/">
-            <a className="hidden lg:flex items-center mr-5 pb-1">
+            <a className="items-center mr-5 lg:pb-1">
               <Image
                 src="/static/marvellogo.png"
                 alt="MARVEL Logo"
@@ -17,7 +17,7 @@ export default function Header() {
               />
             </a>
           </Link>
-          <span className="rounded-lg uppercase shadow-lg tracking-wider text-center text-xs bg-gradient-to-r from-cyan-500 to-indigo-700 text-white px-4 py-2 mb-4 lg:mb-0">
+          <span className="rounded-lg uppercase shadow-lg tracking-wider text-center text-xs bg-gradient-to-r from-cyan-500 to-indigo-700 text-white px-4 py-2">
             Pre-Recruitment
           </span>
         </div>
