@@ -148,6 +148,7 @@ export default function Home() {
               height="600"
               width="400"
               className="rounded-lg"
+              priority={true}
             />
           </div>
         </div>
@@ -163,6 +164,7 @@ export default function Home() {
               alt="Jon Moulton Charity Trust"
               height="354"
               width="709"
+              priority={true}
             />
           </div>
           <div className="xl:w-1/3 md:w-1/2 p-4">
@@ -243,25 +245,57 @@ export default function Home() {
       </SectionWrapper>
       <SectionWrapper id="team">
         <SectionHeader title="About Us" />
-        <div className="grid lg:grid-cols-3 gap-4 lg:gap-8">
-          <NameCard name="Dr Gwo-Tzer Ho" position="Chief Investigator" />
-          <NameCard
-            name="Professor Chris Probert"
-            position="Chair, Trial Steering Committee"
-          />
-          <NameCard
-            name="Professor Jonathan Rhodes"
-            position="Chair, Data Monitoring Committee"
-          />
-          <NameCard
-            name="Dr Rebecca Hall"
-            position="Clinical Research Fellow"
-          />
-          <NameCard name="Dr Shaun Chuah" position="Clinical Research Fellow" />
-          <NameCard name="Beena Pouloose" position="Clinical Research Nurse" />
-          <NameCard name="Athena Oddy" position="Clinical Research Nurse" />
-          <NameCard name="Lisa Derr" position="Trial Manager" />
-          <NameCard name="Katherine Lewis" position="Trial Support Officer" />
+        <div className="flex flex-col lg:flex-row gap-4 lg:gap-8">
+          <div className="lg:w-1/3">
+            <div className="text-sm text-gray-600 italic mb-4">
+              <Image
+                src="/static/cir.jpg"
+                alt="Centre for Inflammation Research"
+                height="933"
+                width="1600"
+                className="rounded-lg"
+              />
+              Centre for Inflammation Research, Queen's Medical Research
+              Institute
+            </div>
+            <div className="text-sm text-gray-600 italic mb-4">
+              <Image
+                src="/static/cir_view_cropped.png"
+                alt="Centre for Inflammation Research Site Overview"
+                height="470"
+                width="835"
+                className="rounded-lg"
+              />
+              Edinburgh BioQuarter Site Overview
+            </div>
+          </div>
+
+          <div className="h-fit grid lg:grid-cols-2 gap-4 lg:gap-8 lg:w-2/3">
+            <NameCard name="Dr Gwo-Tzer Ho" position="Chief Investigator" />
+            <NameCard
+              name="Professor Chris Probert"
+              position="Chair, Trial Steering Committee"
+            />
+            <NameCard
+              name="Professor Jonathan Rhodes"
+              position="Chair, Data Monitoring Committee"
+            />
+            <NameCard
+              name="Dr Rebecca Hall"
+              position="Clinical Research Fellow"
+            />
+            <NameCard
+              name="Dr Shaun Chuah"
+              position="Clinical Research Fellow"
+            />
+            <NameCard
+              name="Beena Pouloose"
+              position="Clinical Research Nurse"
+            />
+            <NameCard name="Athena Oddy" position="Clinical Research Nurse" />
+            <NameCard name="Lisa Derr" position="Trial Manager" />
+            <NameCard name="Katherine Lewis" position="Trial Support Officer" />
+          </div>
         </div>
       </SectionWrapper>
     </main>
