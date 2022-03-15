@@ -1,20 +1,15 @@
 import Image from "next/image";
 import PublicationCard from "../components/PublicationCard";
 import MotionPage from "../components/MotionPage";
+import SectionHeader from "../components/SectionHeader";
+import SectionWrapper from "../components/SectionWrapper";
 
 export default function Investigators() {
   return (
     <MotionPage>
-      <main className="flex flex-col items-center w-full flex-1">
-        <section className="px-5 py-6 md:py-12 w-full" id="studydesign">
-          <div className="flex flex-col">
-            <div className="lg:w-1/2 w-full mb-6">
-              <h1 className="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">
-                Study Design
-              </h1>
-              <div className="h-1 w-20 bg-[#008000] rounded"></div>
-            </div>
-          </div>
+      <main className="flex flex-col w-full">
+        <SectionWrapper id="design">
+          <SectionHeader title="Study Design" />
           <div className="max-w-screen-lg mx-auto py-12">
             <Image
               src="/static/marvel_study_overview.png"
@@ -22,6 +17,29 @@ export default function Investigators() {
               height="650"
               width="1920"
             />
+            <div className="flex flex-row-reverse">
+              <a
+                href="/static/marvel_study_overview.png"
+                target="_blank"
+                className="hover:text-[#008000] text-gray-600 text-sm flex gap-1 flex-row"
+              >
+                Full Size Image
+                <svg
+                  className="w-5 h-5"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                  ></path>
+                </svg>
+              </a>
+            </div>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-4">
@@ -57,24 +75,14 @@ export default function Investigators() {
                 Population
               </h2>
               <p>
-                MARVEL plans to recruit 250 adult patients. In parallel with our
-                paediatric trial MiniMARVEL, this will form the first ever all
-                ages IBD trial.
+                MARVEL plans to recruit 250 adult patients.
               </p>
             </div>
           </div>
-        </section>
+        </SectionWrapper>
 
-        <section className="px-5 py-6 md:py-12 w-full" id="endpoints">
-          <div className="flex flex-col">
-            <div className="lg:w-1/2 w-full mb-6">
-              <h1 className="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">
-                Endpoints
-              </h1>
-              <div className="h-1 w-20 bg-[#008000] rounded"></div>
-            </div>
-          </div>
-
+        <SectionWrapper id="endpoints">
+          <SectionHeader title="Endpoints" />
           <div className="grid md:grid-cols-2 gap-8">
             <div className="py-4">
               <h2 className="text-xl uppercase tracking-wider font-semibold text-[#008000] mb-2">
@@ -98,7 +106,7 @@ export default function Investigators() {
               <h2 className="text-xl uppercase tracking-wider font-semibold text-[#008000] mb-2">
                 Secondary
               </h2>
-              <ul className="list-disc list-outside pl-4 text-lg">
+              <ul className="list-disc list-outside ml-4 pl-4 text-lg">
                 <li>Clinical remission at week 12</li>
                 <li>Clinical response and remission at week 24</li>
                 <li>Mucosal healing</li>
@@ -111,25 +119,18 @@ export default function Investigators() {
               </ul>
             </div>
           </div>
-        </section>
-        <section className="px-5 py-6 md:py-12 w-full" id="criteria">
-          <div className="flex flex-col">
-            <div className="lg:w-1/2 w-full mb-6">
-              <h1 className="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">
-                Inclusion &amp; Exclusion Criteria
-              </h1>
-              <div className="h-1 w-20 bg-[#008000] rounded"></div>
-            </div>
-          </div>
+        </SectionWrapper>
+        <SectionWrapper id="criteria">
+          <SectionHeader title="Inclusion &amp; Exclusion Criteria" />
 
           <div className="grid md:grid-cols-2 gap-8">
             <div className="py-4">
               <h2 className="text-xl uppercase tracking-wider font-semibold text-[#008000] mb-2">
                 Inclusion
               </h2>
-              <ul className="list-disc list-outside pl-4 text-lg">
+              <ul className="list-disc list-outside ml-4 pl-4 text-lg">
                 <li>Active UC</li>
-                <li>&ge;18 years old (miniMARVEL for under 18s)</li>
+                <li>&ge;18 years old</li>
                 <li>Established diagnosis of UC for &ge;3 months</li>
                 <li>Able and willing to give informed consent</li>
                 <li>
@@ -146,7 +147,7 @@ export default function Investigators() {
               <h2 className="text-xl uppercase tracking-wider font-semibold text-[#008000] mb-2">
                 Exclusion
               </h2>
-              <ul className="list-disc list-outside pl-4 text-lg">
+              <ul className="list-disc list-outside ml-4 pl-4 text-lg">
                 <li>
                   Severe extensive colitis likely to require hospitalisation or
                   surgery
@@ -181,49 +182,29 @@ export default function Investigators() {
               </ul>
             </div>
           </div>
-        </section>
+        </SectionWrapper>
 
-        <section className="w-full" id="science">
-          <div className="px-5 py-6 md:py-12">
-            <div className="flex flex-col">
-              <div className="lg:w-1/2 w-full mb-6">
-                <h1 className="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">
-                  Scientific Basis
-                </h1>
-                <div className="h-1 w-20 bg-[#008000] rounded"></div>
-              </div>
-            </div>
-
-            <PublicationCard
-              publicationDate="10 Feb 2022"
-              journal="Annual Review of Physiology"
-              authors="Gwo-Tzer Ho, Arianne L. Theiss"
-              title="Mitochondria and Inflammatory Bowel Diseases: Toward a Stratified Therapeutic Intervention
+        <SectionWrapper id="science">
+          <SectionHeader title="Scientific Basis" />
+          <PublicationCard
+            publicationDate="10 February 2022"
+            journal="Annual Review of Physiology"
+            authors="Gwo-Tzer Ho, Arianne L. Theiss"
+            title="Mitochondria and Inflammatory Bowel Diseases: Toward a Stratified Therapeutic Intervention
             Annual Review of Physiology"
-              externalLink="https://doi.org/10.1146/annurev-physiol-060821-083306"
-            />
-
-            <PublicationCard
-              publicationDate="12 November 2020"
-              journal="Immunotherapy Advances"
-              authors="Emily Gwyer Findlay, Greg Sutton, Gwo-Tzer Ho, BSI Inflammation Affinity Group Trialswatch Team"
-              title="The MARVEL trial: a phase 2b randomised placebo-controlled trial of oral MitoQ in moderate ulcerative colitis"
-              externalLink="https://academic.oup.com/immunotherapyadv/article/1/1/ltaa002/5985574"
-            />
-          </div>
-        </section>
-        <section className="w-full" id="downloads">
-          <div className="px-5 py-6 md:py-12">
-            <div className="flex flex-col">
-              <div className="lg:w-1/2 w-full mb-6">
-                <h1 className="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">
-                  Downloads
-                </h1>
-                <div className="h-1 w-20 bg-[#008000] rounded"></div>
-              </div>
-            </div>
-          </div>
-        </section>
+            externalLink="https://doi.org/10.1146/annurev-physiol-060821-083306"
+          />
+          <PublicationCard
+            publicationDate="12 November 2020"
+            journal="Immunotherapy Advances"
+            authors="Emily Gwyer Findlay, Greg Sutton, Gwo-Tzer Ho, BSI Inflammation Affinity Group Trialswatch Team"
+            title="The MARVEL trial: a phase 2b randomised placebo-controlled trial of oral MitoQ in moderate ulcerative colitis"
+            externalLink="https://academic.oup.com/immunotherapyadv/article/1/1/ltaa002/5985574"
+          />
+        </SectionWrapper>
+        <SectionWrapper id="downloads">
+          <SectionHeader title="Downloads" />
+        </SectionWrapper>
       </main>
     </MotionPage>
   );
