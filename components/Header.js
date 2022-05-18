@@ -17,8 +17,8 @@ export default function Header() {
               />
             </a>
           </Link>
-          <span className="rounded-lg uppercase shadow-lg tracking-wider text-center text-xs bg-gradient-to-r from-cyan-500 to-indigo-700 text-white px-4 py-2">
-            Pre-Recruitment
+          <span className="rounded-lg uppercase shadow-lg tracking-wider text-center text-xs bg-gradient-to-r from-emerald-500 to-green-700 text-white px-4 py-2">
+            Recruiting Now
           </span>
         </div>
         <nav className="flex flex-wrap items-center justify-center gap-4 md:gap-6 sm:text-xl">
