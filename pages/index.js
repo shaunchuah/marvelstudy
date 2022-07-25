@@ -5,6 +5,8 @@ import SectionWrapper from "../components/SectionWrapper";
 import NameCard from "../components/NameCard";
 import { useEffect } from "react";
 
+import RecruitmentStats from "../data/recruitment_stats.json";
+
 export default function Home() {
   const consoleStyle =
     "border-radius:5px; padding: 8px; background: #065f46; color: #fff; font-size: 14px";
@@ -14,6 +16,13 @@ export default function Home() {
     "%cWebsite created by Dr Shaun Chuah using NextJS. For website-related queries please get in touch via twitter https://twitter.com/chershiong",
     consoleStyle
   );
+
+  const participant_number = RecruitmentStats.current_number_of_participants;
+  const participant_percent =
+    RecruitmentStats.current_number_of_participants / 206;
+  const formatted_participant_percent =
+    parseFloat(participant_percent * 100).toFixed(2) + "%";
+  const last_updated = RecruitmentStats.last_updated;
 
   return (
     <main className="flex flex-col w-full">
@@ -74,7 +83,7 @@ export default function Home() {
               University of Edinburgh
             </a>
           </div>
-          <div className="lg:px-8">
+          <div className="w-full lg:px-16">
             <div className="pb-8">
               <div className="bg-white border p-6 rounded-lg shadow flex flex-wrap gap-4 justify-center lg:justify-start items-start">
                 <div className="w-1/3 flex-none">
@@ -100,15 +109,39 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="border p-8 rounded-lg  shadow-lg hover:text-[#008000]  ">
-              <Image
-                src="/static/marvel_study_overview.png"
-                alt="Marvel Study Design Overview"
-                height="650"
-                width="1920"
-                priority={true}
-              />
+
+            <div className="bg-white border p-6 rounded-lg shadow mb-4">
+              <h3 className="text-xl mb-2">Recruitment Status</h3>
+
+              <div className="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
+                <div
+                  className="bg-gradient-to-r from-emerald-500 to-green-700 h-2.5 rounded-full"
+                  style={{ width: formatted_participant_percent }}
+                ></div>
+              </div>
+              <div className="flex items-center justify-between text-sm">
+                <div>{participant_number} / 206 participants</div>
+                <div className="text-sm italic">
+                  Last updated: {last_updated}
+                </div>
+              </div>
             </div>
+            {/* Twitter Feed here. */}
+          </div>
+        </div>
+      </SectionWrapper>
+
+      <SectionWrapper id="overview">
+        <SectionHeader title="Study Overview" />
+        <div className="lg:px-8 lg:w-2/3 lg:mx-auto">
+          <div className="border p-8 rounded-lg  shadow-lg hover:text-[#008000]  ">
+            <Image
+              src="/static/marvel_study_overview.png"
+              alt="Marvel Study Design Overview"
+              height="650"
+              width="1920"
+              priority={true}
+            />
           </div>
         </div>
       </SectionWrapper>
