@@ -27,7 +27,7 @@ export default function Home() {
   return (
     <main className="flex flex-col w-full">
       <SectionWrapper id="hero">
-        <div className="flex lg:flex-row flex-col gap-8 items-center">
+        <div className="flex lg:flex-row flex-col gap-8 items-start">
           <div className="lg:pl-16 lg:w-1/2 flex-none flex flex-col lg:items-start lg:text-left items-center">
             <div className="pt-6 lg:pt-0 w-1/2 lg:w-full">
               <Image
@@ -84,32 +84,6 @@ export default function Home() {
             </a>
           </div>
           <div className="w-full lg:px-16">
-            <div className="pb-8">
-              <div className="bg-white border p-6 rounded-lg shadow flex flex-wrap gap-4 justify-center lg:justify-start items-start">
-                <div className="w-1/3 flex-none">
-                  <Image
-                    src="/static/podcast.jpg"
-                    alt="Lisa Derr introducing MARVEL"
-                    height="1024"
-                    width="1024"
-                    priority={true}
-                    className="rounded-lg"
-                  />
-                </div>
-                <div className="text-center lg:text-left">
-                  <h2 className="text-xl">Introducing MARVEL</h2>
-                  <p className="mb-6 text-sm">By Lisa Derr, Trial Manager</p>
-                  <audio id="marvel_intro" controls className="mb-4">
-                    <source
-                      src="/static/marvel_introduction.mp4"
-                      type="audio/mpeg"
-                    />
-                    Your browser does not support the audio element.
-                  </audio>
-                </div>
-              </div>
-            </div>
-
             <div className="bg-white border p-6 rounded-lg shadow mb-4">
               <h3 className="text-xl mb-2">Recruitment Status</h3>
 
@@ -126,15 +100,53 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            {/* Twitter Feed here. */}
+            <div className="bg-white border p-6 rounded-lg shadow mb-4">
+              <a
+                className="twitter-timeline"
+                href="https://twitter.com/MarvelTrial?ref_src=twsrc%5Etfw"
+              >
+                Tweets by MarvelTrial
+              </a>
+              <script
+                async
+                src="https://platform.twitter.com/widgets.js"
+                charset="utf-8"
+              ></script>
+            </div>
           </div>
         </div>
       </SectionWrapper>
 
       <SectionWrapper id="overview">
         <SectionHeader title="Study Overview" />
-        <div className="lg:px-8 lg:w-2/3 lg:mx-auto">
-          <div className="border p-8 rounded-lg  shadow-lg hover:text-[#008000]  ">
+        <div className="flex flex-col lg:w-1/2 lg:mx-auto">
+          <div className="pb-8">
+            <div className="bg-white border p-6 rounded-lg shadow flex flex-wrap gap-4 justify-center lg:justify-start items-start">
+              <div className="w-1/3 flex-none">
+                <Image
+                  src="/static/podcast.jpg"
+                  alt="Lisa Derr introducing MARVEL"
+                  height="1024"
+                  width="1024"
+                  priority={true}
+                  className="rounded-lg"
+                />
+              </div>
+              <div className="text-center lg:text-left">
+                <h2 className="text-xl">Introducing MARVEL</h2>
+                <p className="mb-6 text-sm">By Lisa Derr, Trial Manager</p>
+                <audio id="marvel_intro" controls className="mb-4">
+                  <source
+                    src="/static/marvel_introduction.mp4"
+                    type="audio/mpeg"
+                  />
+                  Your browser does not support the audio element.
+                </audio>
+              </div>
+            </div>
+          </div>
+
+          <div className="border p-6 rounded-lg shadow hover:text-[#008000]">
             <Image
               src="/static/marvel_study_overview.png"
               alt="Marvel Study Design Overview"
@@ -146,6 +158,7 @@ export default function Home() {
         </div>
       </SectionWrapper>
 
+        <div className="h-1 w-48 mx-auto my-4 bg-gray-300 rounded-xl"></div>
       <SectionWrapper id="intro">
         <div className="px-0 lg:px-16 w-full mx-auto text-center flex flex-col lg:flex-row items-center">
           <div className="lg:mr-24 mb-8 lg:mb-0">
@@ -188,7 +201,7 @@ export default function Home() {
       </SectionWrapper>
 
       <SectionWrapper id="sponsors">
-        <SectionHeader title="Our Sponsors" />
+        <SectionHeader title="Sponsors" />
         <div className="flex flex-wrap -m-4">
           <div className="xl:w-1/3 md:w-1/2 p-4">
             <Image
@@ -233,7 +246,7 @@ export default function Home() {
       </SectionWrapper>
 
       <SectionWrapper id="centres">
-        <SectionHeader title="Current Participating Centres" />
+        <SectionHeader title="Participating Centres" />
         <div className="grid lg:grid-cols-3 gap-8 mb-4">
           <div>
             <div>
