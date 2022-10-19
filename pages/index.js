@@ -31,17 +31,25 @@ export default function Home() {
         <script
           async
           src="https://platform.twitter.com/widgets.js"
-          charset="utf-8"></script>
+          charset="utf-8"
+        ></script>
       </Head>
       <SectionWrapper id="hero">
         <div className="flex lg:flex-row flex-col gap-8 items-start">
           <div className="lg:pl-16 lg:w-1/2 flex-none flex flex-col lg:items-start lg:text-left items-center">
             <div className="pt-6 lg:pt-0 w-1/2 lg:w-full">
               <Image
-                src="/static/marvel_320x150.png"
+                src="/static/logos/marvel_highres.png"
                 alt="MARVEL Logo"
-                height="150"
-                width="320"
+                height="178"
+                width="379"
+                priority={true}
+              />
+              <Image
+                src="/static/logos/minimarvel_highres.png"
+                alt="MARVEL Logo"
+                height="178"
+                width="564"
                 priority={true}
               />
             </div>
@@ -65,7 +73,8 @@ export default function Home() {
               className="p-2 mt-12 text-center md:text-left text-gray-500 hover:text-[#008000]"
               href="https://www.ed.ac.uk/inflammation-research/research/gut-research-unit"
               target="_blank"
-              rel="noopener noreferrer">
+              rel="noopener noreferrer"
+            >
               <span className="inline-flex">
                 A project by the Gut Research Unit
                 <svg
@@ -73,12 +82,14 @@ export default function Home() {
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg">
+                  xmlns="http://www.w3.org/2000/svg"
+                >
                   <path
                     strokeLinecap="round"
                     strokeLinejoin="round"
                     strokeWidth="2"
-                    d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                    d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                  ></path>
                 </svg>
               </span>
               <br />
@@ -94,7 +105,8 @@ export default function Home() {
               <div className="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
                 <div
                   className="bg-gradient-to-r from-emerald-500 to-green-700 h-2.5 rounded-full"
-                  style={{ width: formatted_participant_percent }}></div>
+                  style={{ width: formatted_participant_percent }}
+                ></div>
               </div>
               <div className="flex items-center justify-between text-sm">
                 <div>{participant_number} / 206 participants</div>
@@ -106,16 +118,48 @@ export default function Home() {
             <div className="">
               <a
                 className="twitter-timeline mb-4"
-                href="https://twitter.com/MarvelTrial?ref_src=twsrc%5Etfw">
+                href="https://twitter.com/MarvelTrial?ref_src=twsrc%5Etfw"
+              >
                 Tweets by MarvelTrial
               </a>
               <script
                 async
                 src="https://platform.twitter.com/widgets.js"
-                charset="utf-8"></script>
+                charset="utf-8"
+              ></script>
             </div>
           </div>
         </div>
+      </SectionWrapper>
+      <SectionWrapper id="hero">
+        <div>
+          <div class="lg:pl-16 flex items-center justify-center gap-4 lg:gap-8">
+            <Image
+              src="/static/logos/marvel_highres.png"
+              alt="MARVEL Logo"
+              height="178"
+              width="379"
+              priority={true}
+            />
+            <span class="text-3xl lg:text-5xl">+</span>
+            <Image
+              src="/static/logos/minimarvel_highres.png"
+              alt="MARVEL Logo"
+              height="178"
+              width="564"
+              priority={true}
+            />
+          </div>
+          <p className="pl-2 mt-2 mb-12 lg:mb-4 text-center leading-relaxed sm:text-2xl text-xl">
+            Mitochondrial Antioxidant Therapy to Resolve Inflammation in
+            Ulcerative Colitis
+         <br />
+            in adults (Marvel) and children (mini-Marvel)
+          </p>
+          <p className="pl-2 mt-2 mb-12 lg:mb-4 text-center leading-relaxed sm:text-2xl text-xl">"The first all-ages IBD clinical trial."</p>
+        </div>
+
+        
       </SectionWrapper>
 
       <SectionWrapper id="overview">
@@ -167,7 +211,8 @@ export default function Home() {
               xmlns="http://www.w3.org/2000/svg"
               fill="currentColor"
               className="inline-block w-8 h-8 text-gray-400 mb-8"
-              viewBox="0 0 975.036 975.036">
+              viewBox="0 0 975.036 975.036"
+            >
               <path d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"></path>
             </svg>
             <p className="leading-relaxed text-lg lg:text-xl lg:max-w-prose">
