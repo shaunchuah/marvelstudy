@@ -7,12 +7,12 @@ export default function Header() {
       <div className="flex justify-between flex-wrap px-5 p-4 flex-col lg:flex-row items-center border-b-2">
         <div className="flex items-center mb-4 lg:mb-0">
           <Link href="/">
-            <a className="items-center mr-5 lg:pb-1">
+            <a className="items-center mr-2 lg:pb-1">
               <Image
-                src="/static/marvellogo.png"
+                src="/static/logos/header_highres.png"
                 alt="MARVEL Logo"
-                height="51"
-                width="109"
+                height="50"
+                width="56"
                 priority={true}
               />
             </a>
