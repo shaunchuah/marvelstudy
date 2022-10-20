@@ -35,9 +35,9 @@ export default function Home() {
         ></script>
       </Head>
       <SectionWrapper id="hero">
-        <div className="flex lg:flex-row flex-col gap-8 items-start">
-          <div className="lg:pl-16 lg:w-1/2 flex-none flex flex-col lg:items-start lg:text-left items-center">
-            <div className="pt-6 lg:pt-0 w-1/2 lg:w-full">
+        <div>
+          <div className="flex justify-center">
+            <div class="lg:pl-16 flex items-center justify-center gap-4 lg:gap-8 lg:pt-12 pt-4 lg:w-2/3">
               <Image
                 src="/static/logos/marvel_highres.png"
                 alt="MARVEL Logo"
@@ -45,6 +45,7 @@ export default function Home() {
                 width="379"
                 priority={true}
               />
+              <span class="text-3xl lg:text-5xl">+</span>
               <Image
                 src="/static/logos/minimarvel_highres.png"
                 alt="MARVEL Logo"
@@ -53,24 +54,37 @@ export default function Home() {
                 priority={true}
               />
             </div>
-            <p className="pl-2 mt-2 mb-12 lg:mb-4 text-center lg:text-left leading-relaxed sm:text-2xl text-xl">
+          </div>
+          <div className="flex items-center justify-center pt-4 lg:pt-8 lg:pb-2">
+            <p className="pl-2 mt-2 mb-4 lg:mb-8 text-center leading-relaxed sm:text-2xl text-xl max-w-lg">
               Mitochondrial Antioxidant Therapy to Resolve Inflammation in
               Ulcerative Colitis
             </p>
-            <div className="flex flex-col md:flex-row items-center gap-2">
-              <Link href="/participants">
-                <button className="ml-2 border-2 border-[#008000] bg-[#008000] text-white hover:text-[#008000] hover:bg-green-100 py-2 px-6 rounded text-lg">
-                  For Participants
-                </button>
-              </Link>
-              <Link href="/investigators">
-                <button className="ml-2 border-2 border-[#008000] text-[#008000] hover:bg-green-600 hover:text-white py-2 px-6 rounded text-lg">
-                  For Investigators
-                </button>
-              </Link>
-            </div>
+          </div>
+          <div className="flex flex-col md:flex-row items-center justify-center gap-2 mb-4">
+            
+            <Link href="/marvel">
+              <button className="ml-2 border-2 border-[#008000] bg-[#008000] text-white hover:text-[#008000] hover:bg-green-100 py-2 px-6 rounded text-lg">
+                Marvel (Adults)
+              </button>
+            </Link>
+            <Link href="/mini-marvel">
+              <button className="ml-2 border-2 border-[#008000] bg-[#008000] text-white hover:text-[#008000] hover:bg-green-100 py-2 px-6 rounded text-lg">
+                mini-Marvel (Children)
+              </button>
+            </Link>
+          </div>
+          <div className="flex flex-col md:flex-row items-center justify-center gap-2">
+         
+            <Link href="/investigators">
+              <button className="ml-2 border-2 border-[#008000] text-[#008000] hover:bg-green-600 hover:text-white py-2 px-6 rounded text-lg">
+                For Investigators
+              </button>
+            </Link>
+          </div>
+          <div className="flex items-center justify-center">
             <a
-              className="p-2 mt-12 text-center md:text-left text-gray-500 hover:text-[#008000]"
+              className="mt-8 lg:mt-12 text-center text-gray-500 hover:text-[#008000]"
               href="https://www.ed.ac.uk/inflammation-research/research/gut-research-unit"
               target="_blank"
               rel="noopener noreferrer"
@@ -98,9 +112,52 @@ export default function Home() {
               University of Edinburgh
             </a>
           </div>
-          <div className="w-full lg:px-16">
+        </div>
+      </SectionWrapper>
+
+      <SectionWrapper id="overview">
+        <SectionHeader title="Study Overview" />
+        <div className="grid lg:grid-cols-3 gap-4 lg:gap-6">
+          <div className="lg:col-span-2">
+            <div className="pb-8">
+              <div className="bg-white border p-6 rounded-lg shadow flex flex-wrap gap-4 justify-center lg:justify-start items-start">
+                <div className="w-1/3 flex-none">
+                  <Image
+                    src="/static/podcast.jpg"
+                    alt="Lisa Derr introducing MARVEL"
+                    height="1024"
+                    width="1024"
+                    priority={true}
+                    className="rounded-lg"
+                  />
+                </div>
+                <div className="text-center lg:text-left">
+                  <h2 className="text-xl">Introducing MARVEL</h2>
+                  <p className="mb-6 text-sm">By Lisa Derr, Trial Manager</p>
+                  <audio id="marvel_intro" controls className="mb-4">
+                    <source
+                      src="/static/marvel_introduction.mp4"
+                      type="audio/mpeg"
+                    />
+                    Your browser does not support the audio element.
+                  </audio>
+                </div>
+              </div>
+            </div>
+
+            <div className="border p-6 rounded-lg shadow hover:text-[#008000]">
+              <Image
+                src="/static/marvel_study_overview.png"
+                alt="Marvel Study Design Overview"
+                height="650"
+                width="1920"
+                priority={true}
+              />
+            </div>
+          </div>
+          <div>
             <div className="bg-white border p-6 rounded-lg  mb-4">
-              <h3 className="text-xl mb-2">Recruitment Status</h3>
+              <h3 className="text-xl mb-2">Marvel Recruitment Status</h3>
 
               <div className="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
                 <div
@@ -115,9 +172,11 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="">
+
+            <div>
               <a
                 className="twitter-timeline mb-4"
+                data-height="600"
                 href="https://twitter.com/MarvelTrial?ref_src=twsrc%5Etfw"
               >
                 Tweets by MarvelTrial
@@ -131,82 +190,10 @@ export default function Home() {
           </div>
         </div>
       </SectionWrapper>
-      <SectionWrapper id="hero">
-        <div>
-          <div class="lg:pl-16 flex items-center justify-center gap-4 lg:gap-8">
-            <Image
-              src="/static/logos/marvel_highres.png"
-              alt="MARVEL Logo"
-              height="178"
-              width="379"
-              priority={true}
-            />
-            <span class="text-3xl lg:text-5xl">+</span>
-            <Image
-              src="/static/logos/minimarvel_highres.png"
-              alt="MARVEL Logo"
-              height="178"
-              width="564"
-              priority={true}
-            />
-          </div>
-          <p className="pl-2 mt-2 mb-12 lg:mb-4 text-center leading-relaxed sm:text-2xl text-xl">
-            Mitochondrial Antioxidant Therapy to Resolve Inflammation in
-            Ulcerative Colitis
-         <br />
-            in adults (Marvel) and children (mini-Marvel)
-          </p>
-          <p className="pl-2 mt-2 mb-12 lg:mb-4 text-center leading-relaxed sm:text-2xl text-xl">"The first all-ages IBD clinical trial."</p>
-        </div>
-
-        
-      </SectionWrapper>
-
-      <SectionWrapper id="overview">
-        <SectionHeader title="Study Overview" />
-        <div className="flex flex-col lg:w-1/2 lg:mx-auto">
-          <div className="pb-8">
-            <div className="bg-white border p-6 rounded-lg shadow flex flex-wrap gap-4 justify-center lg:justify-start items-start">
-              <div className="w-1/3 flex-none">
-                <Image
-                  src="/static/podcast.jpg"
-                  alt="Lisa Derr introducing MARVEL"
-                  height="1024"
-                  width="1024"
-                  priority={true}
-                  className="rounded-lg"
-                />
-              </div>
-              <div className="text-center lg:text-left">
-                <h2 className="text-xl">Introducing MARVEL</h2>
-                <p className="mb-6 text-sm">By Lisa Derr, Trial Manager</p>
-                <audio id="marvel_intro" controls className="mb-4">
-                  <source
-                    src="/static/marvel_introduction.mp4"
-                    type="audio/mpeg"
-                  />
-                  Your browser does not support the audio element.
-                </audio>
-              </div>
-            </div>
-          </div>
-
-          <div className="border p-6 rounded-lg shadow hover:text-[#008000]">
-            <Image
-              src="/static/marvel_study_overview.png"
-              alt="Marvel Study Design Overview"
-              height="650"
-              width="1920"
-              priority={true}
-            />
-          </div>
-        </div>
-      </SectionWrapper>
-
       <div className="h-1 w-48 mx-auto my-4 bg-gray-300 rounded-xl"></div>
       <SectionWrapper id="intro">
         <div className="px-0 lg:px-16 w-full mx-auto text-center flex flex-col lg:flex-row items-center">
-          <div className="lg:mr-24 mb-8 lg:mb-0">
+          <div className="lg:mr-24 mb-8 lg:mb-0 lg:w-2/3">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="currentColor"
@@ -232,7 +219,7 @@ export default function Home() {
               University of Edinburgh
             </p>
           </div>
-          <div className="w-1/2 lg:flex-none">
+          <div className="w-1/2 lg:w-1/3 lg:flex-none">
             <Image
               src="/static/gth.jpg"
               alt="Gwo Tzer Ho"
@@ -290,50 +277,7 @@ export default function Home() {
         </div>
       </SectionWrapper>
 
-      <SectionWrapper id="centres">
-        <SectionHeader title="Participating Centres" />
-        <div className="grid lg:grid-cols-3 gap-8 mb-4">
-          <div>
-            <div>
-              <Image
-                src="/static/glasgow.jpg"
-                alt="Glasgow"
-                height="667"
-                width="1000"
-                className="rounded-lg"
-              />
-            </div>
-            <h2 className="text-xl font-medium title-font">Glasgow</h2>
-          </div>
-          <div>
-            <div>
-              <Image
-                src="/static/edinburgh.jpg"
-                alt="Edinburgh"
-                height="667"
-                width="1000"
-                className="rounded-lg"
-              />
-            </div>
-            <h2 className="text-xl font-medium title-font">Edinburgh</h2>
-          </div>
-          <div>
-            <div>
-              <Image
-                src="/static/dundee.jpg"
-                alt="Dundee"
-                height="667"
-                width="1000"
-                className="rounded-lg"
-              />
-            </div>
-            <h2 className="text-xl font-medium title-font">Dundee</h2>
-          </div>
-        </div>
-        <div className="text-center font-medium text-xl lg:text-2xl py-4 px-4 lg:py-6 mt-8 border-2 border-[#008000] text-[#008000] rounded-lg">
-          More centres to follow... Stay tuned.
-        </div>
-      </SectionWrapper>
+      
       <SectionWrapper id="team">
         <SectionHeader title="About Us" />
         <div className="flex flex-col lg:flex-row gap-4 lg:gap-8">
@@ -361,8 +305,16 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="h-fit grid lg:grid-cols-2 gap-4 lg:gap-8 lg:w-2/3">
-            <NameCard name="Dr Gwo-Tzer Ho" position="Chief Investigator" />
+          <div className="h-fit grid gap-4 lg:grid-cols-2 lg:gap-8 lg:w-2/3">
+            <NameCard
+              name="Dr Gwo-Tzer Ho"
+              position="Chief Investigator (Marvel)"
+            />
+            <NameCard
+              name="Professor David Wilson"
+              position="Chief Investigator (mini-Marvel)"
+              mini
+            />
             <NameCard
               name="Professor Chris Probert"
               position="Chair, Trial Steering Committee"
@@ -371,6 +323,7 @@ export default function Home() {
               name="Professor Jonathan Rhodes"
               position="Chair, Data Monitoring Committee"
             />
+            <NameCard name="Michelle Wilson" position="" mini />
             <NameCard
               name="Dr Rebecca Hall"
               position="Clinical Research Fellow"
@@ -384,6 +337,7 @@ export default function Home() {
               position="Clinical Research Nurse"
             />
             <NameCard name="Athena Oddy" position="Clinical Research Nurse" />
+            <NameCard name="Alix" position="Trial Manager" mini />
             <NameCard name="Lisa Derr" position="Trial Manager" />
             <NameCard name="Katherine Lewis" position="Trial Support Officer" />
           </div>

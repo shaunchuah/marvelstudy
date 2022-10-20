@@ -1,11 +1,56 @@
 import MotionPage from "../components/MotionPage";
 import SectionHeader from "../components/SectionHeader";
 import SectionWrapper from "../components/SectionWrapper";
+import Image from "next/image";
 
 export default function Participants() {
   return (
     <MotionPage>
       <main className="flex flex-col w-full">
+        <SectionWrapper id="centres">
+          <SectionHeader title="Participating Centres" />
+          <div className="grid lg:grid-cols-3 gap-8 mb-4">
+            <div>
+              <div>
+                <Image
+                  src="/static/glasgow.jpg"
+                  alt="Glasgow"
+                  height="667"
+                  width="1000"
+                  className="rounded-lg"
+                />
+              </div>
+              <h2 className="text-xl font-medium title-font">Glasgow</h2>
+            </div>
+            <div>
+              <div>
+                <Image
+                  src="/static/edinburgh.jpg"
+                  alt="Edinburgh"
+                  height="667"
+                  width="1000"
+                  className="rounded-lg"
+                />
+              </div>
+              <h2 className="text-xl font-medium title-font">Edinburgh</h2>
+            </div>
+            <div>
+              <div>
+                <Image
+                  src="/static/dundee.jpg"
+                  alt="Dundee"
+                  height="667"
+                  width="1000"
+                  className="rounded-lg"
+                />
+              </div>
+              <h2 className="text-xl font-medium title-font">Dundee</h2>
+            </div>
+          </div>
+          <div className="text-center font-medium text-xl lg:text-2xl py-4 px-4 lg:py-6 mt-8 border-2 border-[#008000] text-[#008000] rounded-lg">
+            More centres to follow... Stay tuned.
+          </div>
+        </SectionWrapper>
         <SectionWrapper id="downloads">
           <SectionHeader title="Participant Information Sheet" />
           <object
