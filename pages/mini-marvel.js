@@ -8,21 +8,72 @@ export default function Participants() {
   return (
     <MotionPage>
       <main className="flex flex-col w-full">
+        <div className="m-4 flex text-xl justify-center bg-orange-700 text-white p-4 rounded-xl shadow-xl items-center">
+          <svg
+            class="w-8 h-8 mr-2"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"
+            ></path>
+          </svg>
+          mini-Marvel is currently in the pre-recruitment phase.
+        </div>
+
+        <SectionWrapper id="introduction">
+          <SectionHeader title="Introducing mini-Marvel" />
+          <div className="flex justify-center">
+            <iframe
+              width="720"
+              height="405"
+              src="https://www.youtube.com/embed/2OC58SdYJCo"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </SectionWrapper>
+
         <SectionWrapper id="participating_centres">
           <SectionHeader title="Participating Centres" />
           <div className="grid lg:grid-cols-3 gap-4 lg:gap-8">
             <div className="col-span-2">
               <div className="grid lg:grid-cols-2 gap-4 lg:gap-8">
-                <CenterCard name="Royal Hospital for Children & Young People" city="Edinburgh" />
+                <CenterCard
+                  name="Royal Hospital for Children & Young People"
+                  city="Edinburgh"
+                />
                 <CenterCard name="Royal Hospital for Children" city="Glasgow" />
-                <CenterCard name="Royal Aberdeen Children's Hospital" city="Aberdeen" />
+                <CenterCard
+                  name="Royal Aberdeen Children's Hospital"
+                  city="Aberdeen"
+                />
                 <CenterCard name="Royal London Hospital" city="London" />
-                <CenterCard name="Evelina London Children's Hospital" city="London"/>
+                <CenterCard
+                  name="Evelina London Children's Hospital"
+                  city="London"
+                />
                 <CenterCard name="Great Ormond Street Hospital" city="London" />
-                <CenterCard name="Alder Hey Children's Hospital" city="Liverpool" />
-                <CenterCard name="Bristol Royal Hospital for Children" city="Bristol" />
+                <CenterCard
+                  name="Alder Hey Children's Hospital"
+                  city="Liverpool"
+                />
+                <CenterCard
+                  name="Bristol Royal Hospital for Children"
+                  city="Bristol"
+                />
                 <CenterCard name="John Radcliffe Hospital" city="Oxford" />
-                <CenterCard name="Birmingham Children's Hospital" city="Birmingham" />
+                <CenterCard
+                  name="Birmingham Children's Hospital"
+                  city="Birmingham"
+                />
               </div>
             </div>
             <div className="col-span-1">
@@ -42,7 +93,7 @@ export default function Participants() {
         <SectionWrapper id="qna">
           <SectionHeader title="Q&A" />
         </SectionWrapper>
-        
+
         <SectionWrapper id="downloads">
           <SectionHeader title="Downloads" />
           <div className="text-xl">

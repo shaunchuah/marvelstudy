@@ -74,9 +74,7 @@ export default function Investigators() {
               <h2 className="text-xl uppercase tracking-wider font-semibold text-[#008000] mb-2">
                 Population
               </h2>
-              <p>
-                MARVEL plans to recruit 250 adult patients.
-              </p>
+              <p>MARVEL plans to recruit 250 adult patients.</p>
             </div>
           </div>
         </SectionWrapper>
@@ -200,6 +198,13 @@ export default function Investigators() {
             authors="Emily Gwyer Findlay, Greg Sutton, Gwo-Tzer Ho, BSI Inflammation Affinity Group Trialswatch Team"
             title="The MARVEL trial: a phase 2b randomised placebo-controlled trial of oral MitoQ in moderate ulcerative colitis"
             externalLink="https://academic.oup.com/immunotherapyadv/article/1/1/ltaa002/5985574"
+          />
+          <PublicationCard
+            publicationDate="3 January 2019"
+            journal="Nature Communications"
+            authors="Yael Haberman, Rebekah Karns, Phillip J. Dexheimer, Melanie Schirmer, Judith Somekh, Ingrid Jurickova, Tzipi Braun, Elizabeth Novak, Laura Bauman, Margaret H. Collins, Angela Mo, Michael J. Rosen, Erin Bonkowski, Nathan Gotman, Alison Marquis, Mason Nistel, Paul A. Rufo, Susan S. Baker, Cary G. Sauer, James Markowitz, Marian D. Pfefferkorn, Joel R. Rosh, Brendan M. Boyle, David R. Mack, Robert N. Baldassano, Sapana Shah, Neal S. Leleiko, Melvin B. Heyman, Anne M. Grifiths, Ashish S. Patel, Joshua D. Noe, Bruce J. Aronow, Subra Kugathasan, Thomas D. Walters, Greg Gibson, Sonia Davis Thomas, Kevin Mollen, Shai Shen-Orr, Curtis Huttenhower, Ramnik J. Xavier, Jeffrey S. Hyams & Lee A. Denson."
+            title="Ulcerative colitis mucosal transcriptomes reveal mitochondriopathy and personalized mechanisms underlying disease severity and treatment response"
+            externalLink="https://www.nature.com/articles/s41467-018-07841-3"
           />
         </SectionWrapper>
         <SectionWrapper id="downloads">

@@ -323,7 +323,7 @@ export default function Home() {
               name="Professor Jonathan Rhodes"
               position="Chair, Data Monitoring Committee"
             />
-            <NameCard name="Michelle Wilson" position="" mini />
+            <NameCard name="Michelle Wilson" position="Research Associate" mini />
             <NameCard
               name="Dr Rebecca Hall"
               position="Clinical Research Fellow"
@@ -337,7 +337,7 @@ export default function Home() {
               position="Clinical Research Nurse"
             />
             <NameCard name="Athena Oddy" position="Clinical Research Nurse" />
-            <NameCard name="Alix" position="Trial Manager" mini />
+            <NameCard name="Alix MacDonald" position="Trial Manager" mini />
             <NameCard name="Lisa Derr" position="Trial Manager" />
             <NameCard name="Katherine Lewis" position="Trial Support Officer" />
           </div>

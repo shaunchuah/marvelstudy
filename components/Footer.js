@@ -11,7 +11,7 @@ export default function Footer() {
               CONTACT DETAILS
             </h2>
             <h3 className="font-bold">Email</h3>
-            <p className="mb-4">
+            <p>
               <a
                 href="mailto:MARVEL.Trial@ed.ac.uk"
                 target="_blank"
@@ -19,6 +19,16 @@ export default function Footer() {
                 className="block lg:inline py-1 lg:py-0 border rounded-lg lg:border-0 hover:text-[#008000] mb-2 lg:mb-0"
               >
                 MARVEL.Trial@ed.ac.uk
+              </a>
+            </p>
+            <p className="mb-4">
+              <a
+                href="mailto:miniMarvel.Trial@ed.ac.uk"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block lg:inline py-1 lg:py-0 border rounded-lg lg:border-0 hover:text-[#008000] mb-2 lg:mb-0"
+              >
+                miniMarvel.Trial@ed.ac.uk
               </a>
             </p>
           </div>
