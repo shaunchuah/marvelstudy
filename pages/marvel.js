@@ -7,6 +7,21 @@ export default function Participants() {
   return (
     <MotionPage>
       <main className="flex flex-col w-full">
+        <SectionWrapper id="introduction">
+          <SectionHeader title="Marvel Study Overview" />
+          <div className="flex justify-center">
+            <div className="lg:w-2/3 border p-6 rounded-lg shadow mb-8">
+              <Image
+                src="/static/marvel_study_overview.png"
+                alt="Marvel Study Design Overview"
+                height="650"
+                width="1920"
+                priority={true}
+              />
+            </div>
+          </div>
+        </SectionWrapper>
+
         <SectionWrapper id="centres">
           <SectionHeader title="Participating Centres" />
           <div className="grid lg:grid-cols-3 gap-8 mb-4">
@@ -46,9 +61,6 @@ export default function Participants() {
               </div>
               <h2 className="text-xl font-medium title-font">Dundee</h2>
             </div>
-          </div>
-          <div className="text-center font-medium text-xl lg:text-2xl py-4 px-4 lg:py-6 mt-8 border-2 border-[#008000] text-[#008000] rounded-lg">
-            More centres to follow... Stay tuned.
           </div>
         </SectionWrapper>
         <SectionWrapper id="downloads">

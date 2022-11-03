@@ -207,9 +207,7 @@ export default function Investigators() {
             externalLink="https://www.nature.com/articles/s41467-018-07841-3"
           />
         </SectionWrapper>
-        <SectionWrapper id="downloads">
-          <SectionHeader title="Downloads" />
-        </SectionWrapper>
+        
       </main>
     </MotionPage>
   );

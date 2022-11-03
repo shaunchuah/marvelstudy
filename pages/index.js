@@ -62,7 +62,6 @@ export default function Home() {
             </p>
           </div>
           <div className="flex flex-col md:flex-row items-center justify-center gap-2 mb-4">
-            
             <Link href="/marvel">
               <button className="ml-2 border-2 border-[#008000] bg-[#008000] text-white hover:text-[#008000] hover:bg-green-100 py-2 px-6 rounded text-lg">
                 Marvel (Adults)
@@ -75,7 +74,6 @@ export default function Home() {
             </Link>
           </div>
           <div className="flex flex-col md:flex-row items-center justify-center gap-2">
-         
             <Link href="/investigators">
               <button className="ml-2 border-2 border-[#008000] text-[#008000] hover:bg-green-600 hover:text-white py-2 px-6 rounded text-lg">
                 For Investigators
@@ -114,12 +112,21 @@ export default function Home() {
           </div>
         </div>
       </SectionWrapper>
-
+      <div className="h-1 w-48 mx-auto my-4 bg-gray-300 rounded-xl"></div>
       <SectionWrapper id="overview">
-        <SectionHeader title="Study Overview" />
+        <SectionHeader title="Marvel Study Overview" />
         <div className="grid lg:grid-cols-3 gap-4 lg:gap-6">
           <div className="lg:col-span-2">
-            <div className="pb-8">
+            <div className="border p-6 rounded-lg shadow hover:text-[#008000]">
+              <Image
+                src="/static/marvel_study_overview.png"
+                alt="Marvel Study Design Overview"
+                height="650"
+                width="1920"
+                priority={true}
+              />
+            </div>
+            <div className="pt-8">
               <div className="bg-white border p-6 rounded-lg shadow flex flex-wrap gap-4 justify-center lg:justify-start items-start">
                 <div className="w-1/3 flex-none">
                   <Image
@@ -143,16 +150,6 @@ export default function Home() {
                   </audio>
                 </div>
               </div>
-            </div>
-
-            <div className="border p-6 rounded-lg shadow hover:text-[#008000]">
-              <Image
-                src="/static/marvel_study_overview.png"
-                alt="Marvel Study Design Overview"
-                height="650"
-                width="1920"
-                priority={true}
-              />
             </div>
           </div>
           <div>
@@ -277,7 +274,6 @@ export default function Home() {
         </div>
       </SectionWrapper>
 
-      
       <SectionWrapper id="team">
         <SectionHeader title="About Us" />
         <div className="flex flex-col lg:flex-row gap-4 lg:gap-8">
@@ -323,7 +319,11 @@ export default function Home() {
               name="Professor Jonathan Rhodes"
               position="Chair, Data Monitoring Committee"
             />
-            <NameCard name="Michelle Wilson" position="Research Associate" mini />
+            <NameCard
+              name="Michelle Wilson"
+              position="Research Associate"
+              mini
+            />
             <NameCard
               name="Dr Rebecca Hall"
               position="Clinical Research Fellow"

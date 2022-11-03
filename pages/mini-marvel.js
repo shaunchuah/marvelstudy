@@ -8,7 +8,7 @@ export default function Participants() {
   return (
     <MotionPage>
       <main className="flex flex-col w-full">
-        <div className="m-4 flex text-xl justify-center bg-orange-700 text-white p-4 rounded-xl shadow-xl items-center">
+        <div className="m-4 flex text-xl justify-center text-orange-700 border-2 border-orange-700 p-4 rounded-xl shadow-xl items-center">
           <svg
             class="w-8 h-8 mr-2"
             fill="none"
@@ -23,11 +23,27 @@ export default function Participants() {
               d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"
             ></path>
           </svg>
-          mini-Marvel is currently in the pre-recruitment phase.
+          mini-Marvel is not yet recruiting. Stay tuned.
         </div>
+
+        <SectionWrapper id="overview">
+          <SectionHeader title="mini-Marvel Study Overview" />
+          <div className="flex justify-center">
+            <div className="lg:w-2/3 border p-6 rounded-lg shadow mb-8">
+              <Image
+                src="/static/mini_marvel_study_overview.png"
+                alt="mini-Marvel Study Design Overview"
+                height="899"
+                width="1883"
+                priority={true}
+              />
+            </div>
+          </div>
+        </SectionWrapper>
 
         <SectionWrapper id="introduction">
           <SectionHeader title="Introducing mini-Marvel" />
+
           <div className="flex justify-center">
             <iframe
               width="720"
@@ -87,12 +103,7 @@ export default function Participants() {
             </div>
           </div>
         </SectionWrapper>
-        <SectionWrapper id="qna">
-          <SectionHeader title="The mini-Marvel Team" />
-        </SectionWrapper>
-        <SectionWrapper id="qna">
-          <SectionHeader title="Q&A" />
-        </SectionWrapper>
+        
 
         <SectionWrapper id="downloads">
           <SectionHeader title="Downloads" />
