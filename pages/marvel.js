@@ -1,11 +1,68 @@
 import MotionPage from "../components/MotionPage";
 import SectionHeader from "../components/SectionHeader";
 import SectionWrapper from "../components/SectionWrapper";
+import Image from "next/image";
 
 export default function Participants() {
   return (
     <MotionPage>
       <main className="flex flex-col w-full">
+        <SectionWrapper id="introduction">
+          <SectionHeader title="Marvel Study Overview" />
+          <div className="flex justify-center">
+            <div className="lg:w-2/3 border p-6 rounded-lg shadow mb-8">
+              <Image
+                src="/static/marvel_study_overview.png"
+                alt="Marvel Study Design Overview"
+                height="650"
+                width="1920"
+                priority={true}
+              />
+            </div>
+          </div>
+        </SectionWrapper>
+
+        <SectionWrapper id="centres">
+          <SectionHeader title="Participating Centres" />
+          <div className="grid lg:grid-cols-3 gap-8 mb-4">
+            <div>
+              <div>
+                <Image
+                  src="/static/glasgow.jpg"
+                  alt="Glasgow"
+                  height="667"
+                  width="1000"
+                  className="rounded-lg"
+                />
+              </div>
+              <h2 className="text-xl font-medium title-font">Glasgow</h2>
+            </div>
+            <div>
+              <div>
+                <Image
+                  src="/static/edinburgh.jpg"
+                  alt="Edinburgh"
+                  height="667"
+                  width="1000"
+                  className="rounded-lg"
+                />
+              </div>
+              <h2 className="text-xl font-medium title-font">Edinburgh</h2>
+            </div>
+            <div>
+              <div>
+                <Image
+                  src="/static/dundee.jpg"
+                  alt="Dundee"
+                  height="667"
+                  width="1000"
+                  className="rounded-lg"
+                />
+              </div>
+              <h2 className="text-xl font-medium title-font">Dundee</h2>
+            </div>
+          </div>
+        </SectionWrapper>
         <SectionWrapper id="downloads">
           <SectionHeader title="Participant Information Sheet" />
           <object

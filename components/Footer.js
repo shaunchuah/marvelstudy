@@ -11,7 +11,7 @@ export default function Footer() {
               CONTACT DETAILS
             </h2>
             <h3 className="font-bold">Email</h3>
-            <p className="mb-4">
+            <p>
               <a
                 href="mailto:MARVEL.Trial@ed.ac.uk"
                 target="_blank"
@@ -19,6 +19,16 @@ export default function Footer() {
                 className="block lg:inline py-1 lg:py-0 border rounded-lg lg:border-0 hover:text-[#008000] mb-2 lg:mb-0"
               >
                 MARVEL.Trial@ed.ac.uk
+              </a>
+            </p>
+            <p className="mb-4">
+              <a
+                href="mailto:miniMarvel.Trial@ed.ac.uk"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block lg:inline py-1 lg:py-0 border rounded-lg lg:border-0 hover:text-[#008000] mb-2 lg:mb-0"
+              >
+                miniMarvel.Trial@ed.ac.uk
               </a>
             </p>
           </div>
@@ -93,16 +103,17 @@ export default function Footer() {
         <div className="px-5 py-6 flex items-center lg:flex-row flex-col">
           <Link href="/">
             <a className="flex title-font font-medium items-center lg:justify-start justify-center text-gray-900">
-              <Image
-                src="/static/marvellogo.png"
+            <Image
+                src="/static/logos/header_highres.png"
                 alt="MARVEL Logo"
-                height="51"
-                width="109"
+                height="50"
+                width="56"
+                priority={true}
               />
             </a>
           </Link>
-          <p className="text-center lg:text-left text-sm text-gray-500 lg:ml-6 lg:mt-0 mt-4">
-            © 2022 MARVEL Research Team. <br/>Last Updated Feb 2022
+          <p className="text-center lg:text-left text-sm text-gray-500 lg:ml-4 lg:mt-0 mt-4">
+            © 2022 MARVEL &amp; mini-Marvel Research Team <br/>Last Updated October 2022
           </p>
         </div>
       </div>
