@@ -25,8 +25,11 @@ export default function Participants() {
         <SectionWrapper id="centres">
           <SectionHeader title="Participating Centres" />
           <div className="grid lg:grid-cols-3 gap-8 mb-4">
-            <div>
-              <div>
+
+            {/* Center Card */}
+            <div className="border shadow rounded-lg px-6 py-4 text-left">
+              <h2 className="text-2xl font-medium mb-4 mt-2">Glasgow</h2>
+              <div className="mb-4">
                 <Image
                   src="/static/glasgow.jpg"
                   alt="Glasgow"
@@ -35,11 +38,16 @@ export default function Participants() {
                   className="rounded-lg"
                 />
               </div>
-              <h2 className="text-xl font-medium title-font">Glasgow</h2>
+              <p>Queen Elizabeth University Hospital</p>
+              <p>Gartnavel General Hospital</p>
             </div>
-            <div>
-              <div>
-                <Image
+            {/* End Center Card */}
+
+            {/* Center Card */}
+            <div className="border shadow rounded-lg px-6 py-4 text-left">
+              <h2 className="text-2xl font-medium mb-4 mt-2">Edinburgh</h2>
+              <div className="mb-4">
+              <Image
                   src="/static/edinburgh.jpg"
                   alt="Edinburgh"
                   height="667"
@@ -47,11 +55,16 @@ export default function Participants() {
                   className="rounded-lg"
                 />
               </div>
-              <h2 className="text-xl font-medium title-font">Edinburgh</h2>
+              <p>Western General Hospital</p>
             </div>
-            <div>
-              <div>
-                <Image
+            {/* End Center Card */}
+
+
+            {/* Center Card */}
+            <div className="border shadow rounded-lg px-6 py-4 text-left">
+              <h2 className="text-2xl font-medium mb-4 mt-2">Dundee</h2>
+              <div className="mb-4">
+              <Image
                   src="/static/dundee.jpg"
                   alt="Dundee"
                   height="667"
@@ -59,8 +72,27 @@ export default function Participants() {
                   className="rounded-lg"
                 />
               </div>
-              <h2 className="text-xl font-medium title-font">Dundee</h2>
+              <p>Ninewells Hospital</p>
             </div>
+            {/* End Center Card */}
+
+            {/* Center Card */}
+            <div className="border shadow rounded-lg px-6 py-4 text-left">
+              <h2 className="text-2xl font-medium mb-4 mt-2">London</h2>
+              <div className="mb-4">
+              <Image
+                  src="/static/london.jpg"
+                  alt="London"
+                  height="1080"
+                  width="1620"
+                  className="rounded-lg"
+                />
+              </div>
+              <p>Chelsea and Westminster Hospital</p>
+            </div>
+            {/* End Center Card */}
+
+            
           </div>
         </SectionWrapper>
         <SectionWrapper id="downloads">
