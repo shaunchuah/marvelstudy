@@ -4,9 +4,7 @@ import Head from "next/head";
 import SectionHeader from "../components/SectionHeader";
 import SectionWrapper from "../components/SectionWrapper";
 import NameCard from "../components/NameCard";
-import { useEffect } from "react";
-
-import RecruitmentStats from "../data/recruitment_stats.json";
+import RecruitmentStats from "../components/RecruitmentStats";
 
 export default function Home() {
   const consoleStyle =
@@ -17,13 +15,6 @@ export default function Home() {
     "%cWebsite created by Dr Shaun Chuah using NextJS. For website-related queries please get in touch via twitter https://twitter.com/chershiong",
     consoleStyle
   );
-
-  const participant_number = RecruitmentStats.current_number_of_participants;
-  const participant_percent =
-    RecruitmentStats.current_number_of_participants / 206;
-  const formatted_participant_percent =
-    parseFloat(participant_percent * 100).toFixed(2) + "%";
-  const last_updated = RecruitmentStats.last_updated;
 
   return (
     <main className="flex flex-col w-full">
@@ -153,22 +144,7 @@ export default function Home() {
             </div>
           </div>
           <div>
-            <div className="bg-white border p-6 rounded-lg  mb-4">
-              <h3 className="text-xl mb-2">Marvel Recruitment Status</h3>
-
-              <div className="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
-                <div
-                  className="bg-gradient-to-r from-emerald-500 to-green-700 h-2.5 rounded-full"
-                  style={{ width: formatted_participant_percent }}
-                ></div>
-              </div>
-              <div className="flex items-center justify-between text-sm">
-                <div>{participant_number} / 206 participants</div>
-                <div className="text-sm italic">
-                  Last updated: {last_updated}
-                </div>
-              </div>
-            </div>
+            <RecruitmentStats></RecruitmentStats>
 
             <div>
               <a

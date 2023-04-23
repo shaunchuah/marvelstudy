@@ -2,6 +2,7 @@ import MotionPage from "../components/MotionPage";
 import SectionHeader from "../components/SectionHeader";
 import SectionWrapper from "../components/SectionWrapper";
 import Image from "next/image";
+import MarvelCenterCard from "../components/MarvelCenterCard";
 
 export default function Participants() {
   return (
@@ -25,74 +26,57 @@ export default function Participants() {
         <SectionWrapper id="centres">
           <SectionHeader title="Participating Centres" />
           <div className="grid lg:grid-cols-3 gap-8 mb-4">
+            <MarvelCenterCard
+              name="Western General Hospital"
+              city="Edinburgh"
+              pi="Dr Gwo-Tzer Ho"
+              image_url="/static/edinburgh.jpg"
+            />
 
-            {/* Center Card */}
-            <div className="border shadow rounded-lg px-6 py-4 text-left">
-              <h2 className="text-2xl font-medium mb-4 mt-2">Glasgow</h2>
-              <div className="mb-4">
-                <Image
-                  src="/static/glasgow.jpg"
-                  alt="Glasgow"
-                  height="667"
-                  width="1000"
-                  className="rounded-lg"
-                />
-              </div>
-              <p>Queen Elizabeth University Hospital</p>
-              <p>Gartnavel General Hospital</p>
-            </div>
-            {/* End Center Card */}
+            <MarvelCenterCard
+              name="Queen Elizabeth University Hospital"
+              city="Glasgow"
+              pi="Dr John Paul Seenan & Dr Jonathan MacDonald"
+              image_url="/static/glasgow.jpg"
+            />
+            <MarvelCenterCard
+              name="Gartnavel General Hospital"
+              city="Glasgow"
+              pi="Dr John Paul Seenan & Dr Jonathan MacDonald"
+              image_url="/static/glasgow.jpg"
+            />
 
-            {/* Center Card */}
-            <div className="border shadow rounded-lg px-6 py-4 text-left">
-              <h2 className="text-2xl font-medium mb-4 mt-2">Edinburgh</h2>
-              <div className="mb-4">
-              <Image
-                  src="/static/edinburgh.jpg"
-                  alt="Edinburgh"
-                  height="667"
-                  width="1000"
-                  className="rounded-lg"
-                />
-              </div>
-              <p>Western General Hospital</p>
-            </div>
-            {/* End Center Card */}
+            <MarvelCenterCard
+              name="Glasgow Royal Infirmary"
+              city="Glasgow"
+              pi="Prof Daniel Gaya"
+              image_url="/static/glasgow.jpg"
+            />
 
-
-            {/* Center Card */}
-            <div className="border shadow rounded-lg px-6 py-4 text-left">
-              <h2 className="text-2xl font-medium mb-4 mt-2">Dundee</h2>
-              <div className="mb-4">
-              <Image
-                  src="/static/dundee.jpg"
-                  alt="Dundee"
-                  height="667"
-                  width="1000"
-                  className="rounded-lg"
-                />
-              </div>
-              <p>Ninewells Hospital</p>
-            </div>
-            {/* End Center Card */}
-
-            {/* Center Card */}
-            <div className="border shadow rounded-lg px-6 py-4 text-left">
-              <h2 className="text-2xl font-medium mb-4 mt-2">London</h2>
-              <div className="mb-4">
-              <Image
-                  src="/static/london.jpg"
-                  alt="London"
-                  height="1080"
-                  width="1620"
-                  className="rounded-lg"
-                />
-              </div>
-              <p>Chelsea and Westminster Hospital</p>
-            </div>
-            {/* End Center Card */}
-
-            
+            <MarvelCenterCard
+              name="Ninewells Hospital"
+              city="Dundee"
+              pi="Dr Craig Mowat"
+              image_url="/static/dundee.jpg"
+            />
+            <MarvelCenterCard
+              name="St George's Hospital"
+              city="London"
+              pi="Dr Kamal Patel"
+              image_url="/static/glasgow.jpg"
+            />
+            <MarvelCenterCard
+              name="Darlington Memorial Hospital"
+              city="Darlington"
+              pi="Dr Anjan Dhar"
+              image_url="/static/glasgow.jpg"
+            />
+            <MarvelCenterCard
+              name="Pinderfields Hospital"
+              city="Wakefield"
+              pi="Dr Nick Burr"
+              image_url="/static/glasgow.jpg"
+            />
           </div>
         </SectionWrapper>
         <SectionWrapper id="downloads">
