@@ -28,7 +28,7 @@ export default function RecruitmentStats() {
     <div className="bg-white border p-6 rounded-lg  mb-4">
       <h3 className="text-xl mb-2">Marvel Recruitment Status</h3>
 
-      <div className="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
+      <div className="w-full bg-gray-200 rounded-full h-2.5">
         <div
           className="bg-gradient-to-r from-emerald-500 to-green-700 h-2.5 rounded-full"
           style={{ width: formatted_participant_percent }}
