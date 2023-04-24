@@ -77,6 +77,12 @@ export default function Participants() {
               pi="Dr Nick Burr"
               image_url="/static/glasgow.jpg"
             />
+            <MarvelCenterCard
+              name="Chelsea and Westminster Hospital"
+              city="London"
+              pi="Dr Ibrahim Al-Bakir"
+              image_url="/static/glasgow.jpg"
+            />
           </div>
         </SectionWrapper>
         <SectionWrapper id="downloads">
