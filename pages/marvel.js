@@ -88,7 +88,7 @@ export default function Participants() {
         <SectionWrapper id="downloads">
           <SectionHeader title="Participant Information Sheet" />
           <object
-            data="/static/files/marvel_patient_info_v5.0.pdf"
+            data="/static/files/marvel_patient_info_v7.0.pdf"
             type="application/pdf"
             width="100%"
             height="1080px"
@@ -96,7 +96,7 @@ export default function Participants() {
             This browser does not support PDFs. Please download the PDF to view
             it:{" "}
             <a
-              href="/static/files/marvel_patient_info_v5.0.pdf"
+              href="/static/files/marvel_patient_info_v7.0.pdf"
               target="_blank"
             >
               Download Patient Information Sheet.
@@ -107,7 +107,7 @@ export default function Participants() {
           <SectionHeader title="Downloads" />
           <div className="text-xl">
             <a
-              href="/static/files/marvel_patient_info_v5.0.pdf"
+              href="/static/files/marvel_patient_info_v7.0.pdf"
               target="_blank"
               className="flex flex-row items-center hover:text-[#008000]"
             >
@@ -123,7 +123,7 @@ export default function Participants() {
                   clipRule="evenodd"
                 ></path>
               </svg>
-              Participant Information Sheet v5.0
+              Participant Information Sheet v7.0
             </a>
           </div>
         </SectionWrapper>
