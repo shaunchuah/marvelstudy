@@ -1,7 +1,9 @@
 {
   "current_number_of_participants": "21",
   "last_updated": "April 2023",
-  "edinburgh_participants": "14",
-  "glasgow_participants": "6",
-  "dundee_participants": "1"
+  "center_statistics": [
+    { "center": "Edinburgh", "number_of_participants": 14 },
+    { "center": "Glasgow", "number_of_participants": 6 },
+    { "center": "Dundee", "number_of_participants": 1 }
+  ]
 }
