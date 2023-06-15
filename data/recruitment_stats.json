@@ -1,8 +1,9 @@
 {
-  "last_updated": "April 2023",
+  "last_updated": "June 2023",
   "center_statistics": [
-    { "center": "Edinburgh", "number_of_participants": 14 },
-    { "center": "Glasgow", "number_of_participants": 6 },
-    { "center": "Dundee", "number_of_participants": 1 }
+    { "center": "Edinburgh", "number_of_participants": 15 },
+    { "center": "Glasgow", "number_of_participants": 7 },
+    { "center": "Dundee", "number_of_participants": 1 },
+    { "center": "Chelsea & Westminster", "number_of_participants": 1 }
   ]
 }
