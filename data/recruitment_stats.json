@@ -6,6 +6,6 @@
     { "center": "Dundee", "number_of_participants": 2 },
     { "center": "Chelsea & Westminster", "number_of_participants": 1 },
     { "center": "Pinderfields Hospital", "number_of_participants": 3 },
-    { "centre": "Darlington Memorial Hospital", "number_of_participants": 1 }
+    { "center": "Darlington Memorial Hospital", "number_of_participants": 1 }
   ]
 }
