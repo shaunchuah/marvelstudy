@@ -1,11 +1,11 @@
 {
-  "last_updated": "October 2023",
+  "last_updated": "April 2024",
   "center_statistics": [
-    { "center": "Edinburgh", "number_of_participants": 19 },
-    { "center": "Glasgow", "number_of_participants": 10 },
+    { "center": "Edinburgh", "number_of_participants": 23 },
+    { "center": "Glasgow", "number_of_participants": 11 },
     { "center": "Dundee", "number_of_participants": 2 },
     { "center": "Chelsea & Westminster", "number_of_participants": 1 },
-    { "center": "Pinderfields Hospital", "number_of_participants": 3 },
+    { "center": "Pinderfields Hospital", "number_of_participants": 4 },
     { "center": "Darlington Memorial Hospital", "number_of_participants": 1 }
   ]
 }
