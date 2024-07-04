@@ -83,6 +83,12 @@ export default function Participants() {
               pi="Dr Ibrahim Al-Bakir"
               image_url="/static/glasgow.jpg"
             />
+            <MarvelCenterCard
+              name="Northern Care Alliance NHS Trust"
+              city="Manchester"
+              pi="Prof Jimmy Limdi"
+              image_url="/static/glasgow.jpg"
+            />
           </div>
         </SectionWrapper>
         <SectionWrapper id="downloads">
