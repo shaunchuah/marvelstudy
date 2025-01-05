@@ -21,16 +21,6 @@ export default function Footer() {
                 MARVEL.Trial@ed.ac.uk
               </a>
             </p>
-            <p className="mb-4">
-              <a
-                href="mailto:miniMarvel.Trial@ed.ac.uk"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="block lg:inline py-1 lg:py-0 border rounded-lg lg:border-0 hover:text-[#008000] mb-2 lg:mb-0"
-              >
-                miniMarvel.Trial@ed.ac.uk
-              </a>
-            </p>
           </div>
           <div className="lg:w-1/3 md:w-1/2 w-full px-4">
             <h2 className="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">
@@ -101,19 +91,25 @@ export default function Footer() {
       </div>
       <div>
         <div className="px-5 py-6 flex items-center lg:flex-row flex-col">
-          <Link href="/">
-            <a className="flex title-font font-medium items-center lg:justify-start justify-center text-gray-900">
+          <Link
+            href="/"
+            className="flex title-font font-medium items-center lg:justify-start justify-center text-gray-900"
+          >
             <Image
-                src="/static/logos/header_highres.png"
-                alt="MARVEL Logo"
-                height="50"
-                width="56"
-                priority={true}
-              />
-            </a>
+              src="/static/logos/header_highres.png"
+              alt="MARVEL Logo"
+              height="50"
+              width="56"
+              priority={true}
+              style={{
+                maxWidth: "100%",
+                height: "auto",
+              }}
+            />
           </Link>
           <p className="text-center lg:text-left text-sm text-gray-500 lg:ml-4 lg:mt-0 mt-4">
-            © 2022 MARVEL &amp; mini-Marvel Research Team <br/>Last Updated October 2022
+            © 2022 MARVEL &amp; mini-Marvel Research Team <br />
+            Last Updated October 2022
           </p>
         </div>
       </div>

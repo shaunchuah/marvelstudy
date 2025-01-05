@@ -6,7 +6,7 @@ import Image from "next/image";
 
 export default function Participants() {
   return (
-    <MotionPage>
+    (<MotionPage>
       <main className="flex flex-col w-full">
         <div className="m-4 flex text-xl justify-center text-orange-700 border-2 border-orange-700 p-4 rounded-xl shadow-xl items-center">
           <svg
@@ -36,7 +36,10 @@ export default function Participants() {
                 height="899"
                 width="1883"
                 priority={true}
-              />
+                style={{
+                  maxWidth: "100%",
+                  height: "auto"
+                }} />
             </div>
           </div>
         </SectionWrapper>
@@ -99,7 +102,10 @@ export default function Participants() {
                 height="1112"
                 width="684"
                 className="rounded-lg"
-              />
+                style={{
+                  maxWidth: "100%",
+                  height: "auto"
+                }} />
             </div>
           </div>
         </SectionWrapper>
@@ -130,6 +136,6 @@ export default function Participants() {
           </div>
         </SectionWrapper>
       </main>
-    </MotionPage>
+    </MotionPage>)
   );
 }

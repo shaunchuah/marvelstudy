@@ -18,13 +18,6 @@ export default function Home() {
 
   return (
     <main className="flex flex-col w-full">
-      <Head>
-        <script
-          async
-          src="https://platform.twitter.com/widgets.js"
-          charset="utf-8"
-        ></script>
-      </Head>
       <SectionWrapper id="hero">
         <div>
           <div className="flex justify-center">
@@ -35,14 +28,10 @@ export default function Home() {
                 height="178"
                 width="379"
                 priority={true}
-              />
-              <span class="text-3xl lg:text-5xl">+</span>
-              <Image
-                src="/static/logos/minimarvel_highres.png"
-                alt="MARVEL Logo"
-                height="178"
-                width="564"
-                priority={true}
+                style={{
+                  maxWidth: "100%",
+                  height: "auto",
+                }}
               />
             </div>
           </div>
@@ -53,24 +42,18 @@ export default function Home() {
             </p>
           </div>
           <div className="flex flex-col md:flex-row items-center justify-center gap-2 mb-4">
-            <Link href="/marvel">
+            <Link href="/marvel" legacyBehavior>
               <button className="ml-2 border-2 border-[#008000] bg-[#008000] text-white hover:text-[#008000] hover:bg-green-100 py-2 px-6 rounded text-lg">
-                Marvel (Adults)
+                For Participants
               </button>
             </Link>
-            <Link href="/mini-marvel">
-              <button className="ml-2 border-2 border-[#008000] bg-[#008000] text-white hover:text-[#008000] hover:bg-green-100 py-2 px-6 rounded text-lg">
-                mini-Marvel (Children)
-              </button>
-            </Link>
-          </div>
-          <div className="flex flex-col md:flex-row items-center justify-center gap-2">
-            <Link href="/investigators">
+            <Link href="/investigators" legacyBehavior>
               <button className="ml-2 border-2 border-[#008000] text-[#008000] hover:bg-green-600 hover:text-white py-2 px-6 rounded text-lg">
                 For Investigators
               </button>
             </Link>
           </div>
+
           <div className="flex items-center justify-center">
             <a
               className="mt-8 lg:mt-12 text-center text-gray-500 hover:text-[#008000]"
@@ -115,6 +98,10 @@ export default function Home() {
                 height="650"
                 width="1920"
                 priority={true}
+                style={{
+                  maxWidth: "100%",
+                  height: "auto",
+                }}
               />
             </div>
             <div className="pt-8">
@@ -127,6 +114,10 @@ export default function Home() {
                     width="1024"
                     priority={true}
                     className="rounded-lg"
+                    style={{
+                      maxWidth: "100%",
+                      height: "auto",
+                    }}
                   />
                 </div>
                 <div className="text-center lg:text-left">
@@ -145,21 +136,6 @@ export default function Home() {
           </div>
           <div>
             <RecruitmentStats></RecruitmentStats>
-
-            <div>
-              <a
-                className="twitter-timeline mb-4"
-                data-height="600"
-                href="https://twitter.com/MarvelTrial?ref_src=twsrc%5Etfw"
-              >
-                Tweets by MarvelTrial
-              </a>
-              <script
-                async
-                src="https://platform.twitter.com/widgets.js"
-                charset="utf-8"
-              ></script>
-            </div>
           </div>
         </div>
       </SectionWrapper>
@@ -200,11 +176,14 @@ export default function Home() {
               width="400"
               className="rounded-lg"
               priority={true}
+              style={{
+                maxWidth: "100%",
+                height: "auto",
+              }}
             />
           </div>
         </div>
       </SectionWrapper>
-
       <SectionWrapper id="sponsors">
         <SectionHeader title="Sponsors" />
         <div className="flex flex-wrap -m-4">
@@ -216,6 +195,10 @@ export default function Home() {
               height="354"
               width="709"
               priority={true}
+              style={{
+                maxWidth: "100%",
+                height: "auto",
+              }}
             />
           </div>
           <div className="xl:w-1/3 md:w-1/2 p-4">
@@ -225,6 +208,10 @@ export default function Home() {
               alt="Centre for Inflammation Research"
               height="354"
               width="709"
+              style={{
+                maxWidth: "100%",
+                height: "auto",
+              }}
             />
           </div>
 
@@ -235,6 +222,10 @@ export default function Home() {
               alt="NHS Lothian"
               height="354"
               width="354"
+              style={{
+                maxWidth: "100%",
+                height: "auto",
+              }}
             />
           </div>
           <div className="hidden md:w-1/4 md:block xl:hidden"></div>
@@ -245,11 +236,14 @@ export default function Home() {
               alt="ACCORD"
               height="354"
               width="354"
+              style={{
+                maxWidth: "100%",
+                height: "auto",
+              }}
             />
           </div>
         </div>
       </SectionWrapper>
-
       <SectionWrapper id="team">
         <SectionHeader title="About Us" />
         <div className="flex flex-col lg:flex-row gap-4 lg:gap-8">
@@ -261,6 +255,10 @@ export default function Home() {
                 height="933"
                 width="1600"
                 className="rounded-lg"
+                style={{
+                  maxWidth: "100%",
+                  height: "auto",
+                }}
               />
               Centre for Inflammation Research, Queen's Medical Research
               Institute
@@ -272,6 +270,10 @@ export default function Home() {
                 height="470"
                 width="835"
                 className="rounded-lg"
+                style={{
+                  maxWidth: "100%",
+                  height: "auto",
+                }}
               />
               Edinburgh BioQuarter Site Overview
             </div>

@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function NameCard({ name, position, mini }) {
   return (
-    <div className="border rounded-lg px-4 py-4 shadow text-left">
+    (<div className="border rounded-lg px-4 py-4 shadow text-left">
       <div className="flex flex-row items-start justify-between">
         <div>
           <h3 className="text-lg font-bold">{name}</h3>
@@ -17,7 +17,10 @@ export default function NameCard({ name, position, mini }) {
               height="178"
               width="564"
               priority={true}
-            />
+              style={{
+                maxWidth: "100%",
+                height: "auto"
+              }} />
           </div>
         ) : (
           <div className="w-1/5">
@@ -27,10 +30,13 @@ export default function NameCard({ name, position, mini }) {
               height="178"
               width="379"
               priority={true}
-            />
+              style={{
+                maxWidth: "100%",
+                height: "auto"
+              }} />
           </div>
         )}
       </div>
-    </div>
+    </div>)
   );
 }

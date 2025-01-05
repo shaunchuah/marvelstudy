@@ -6,7 +6,7 @@ import MarvelCenterCard from "../components/MarvelCenterCard";
 
 export default function Participants() {
   return (
-    <MotionPage>
+    (<MotionPage>
       <main className="flex flex-col w-full">
         <SectionWrapper id="introduction">
           <SectionHeader title="Marvel Study Overview" />
@@ -18,7 +18,10 @@ export default function Participants() {
                 height="650"
                 width="1920"
                 priority={true}
-              />
+                style={{
+                  maxWidth: "100%",
+                  height: "auto"
+                }} />
             </div>
           </div>
         </SectionWrapper>
@@ -134,6 +137,6 @@ export default function Participants() {
           </div>
         </SectionWrapper>
       </main>
-    </MotionPage>
+    </MotionPage>)
   );
 }

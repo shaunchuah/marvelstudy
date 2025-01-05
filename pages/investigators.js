@@ -6,7 +6,7 @@ import SectionWrapper from "../components/SectionWrapper";
 
 export default function Investigators() {
   return (
-    <MotionPage>
+    (<MotionPage>
       <main className="flex flex-col w-full">
         <SectionWrapper id="design">
           <SectionHeader title="Study Design" />
@@ -16,7 +16,10 @@ export default function Investigators() {
               alt="Marvel Study Design Overview"
               height="650"
               width="1920"
-            />
+              style={{
+                maxWidth: "100%",
+                height: "auto"
+              }} />
             <div className="flex flex-row-reverse">
               <a
                 href="/static/marvel_study_overview.png"
@@ -209,6 +212,6 @@ export default function Investigators() {
         </SectionWrapper>
         
       </main>
-    </MotionPage>
+    </MotionPage>)
   );
 }
