@@ -5,6 +5,7 @@ import SectionHeader from "../components/SectionHeader";
 import SectionWrapper from "../components/SectionWrapper";
 import NameCard from "../components/NameCard";
 import RecruitmentStats from "../components/RecruitmentStats";
+import BlueSkyFeed from "../components/BlueSkyFeed";
 
 export default function Home() {
   const consoleStyle =
@@ -19,70 +20,75 @@ export default function Home() {
   return (
     <main className="flex flex-col w-full">
       <SectionWrapper id="hero">
-        <div>
-          <div className="flex justify-center">
-            <div class="lg:pl-16 flex items-center justify-center gap-4 lg:gap-8 lg:pt-12 pt-4 lg:w-2/3">
-              <Image
-                src="/static/logos/marvel_highres.png"
-                alt="MARVEL Logo"
-                height="178"
-                width="379"
-                priority={true}
-                style={{
-                  maxWidth: "100%",
-                  height: "auto",
-                }}
-              />
+        <div className="md:grid grid-cols-3">
+          <div className="col-span-2">
+            <div className="flex justify-center md:justify-start">
+              <div class=" flex items-center gap-4 lg:gap-8 lg:pt-12 pt-4 lg:w-2/3">
+                <Image
+                  src="/static/logos/marvel_highres.png"
+                  alt="MARVEL Logo"
+                  height="178"
+                  width="379"
+                  priority={true}
+                  style={{
+                    maxWidth: "100%",
+                    height: "auto",
+                  }}
+                />
+              </div>
+            </div>
+            <div className="flex items-center pt-4 lg:pb-2">
+              <p className="mt-2 mb-4 lg:mb-8 leading-relaxed sm:text-2xl text-xl max-w-lg text-center md:text-left">
+                Mitochondrial Antioxidant Therapy to Resolve Inflammation in
+                Ulcerative Colitis
+              </p>
+            </div>
+            <div className="flex flex-col md:flex-row items-center gap-2 mb-4">
+              <Link href="/marvel" legacyBehavior>
+                <button className="ml-2 md:ml-0 border-2 border-[#008000] bg-[#008000] text-white hover:text-[#008000] hover:bg-green-100 py-2 px-6 rounded text-lg">
+                  For Participants
+                </button>
+              </Link>
+              <Link href="/investigators" legacyBehavior>
+                <button className="ml-2 border-2 border-[#008000] text-[#008000] hover:bg-green-600 hover:text-white py-2 px-6 rounded text-lg">
+                  For Investigators
+                </button>
+              </Link>
+            </div>
+
+            <div className="flex items-center justify-center md:justify-start mb-8 md:mb-0">
+              <a
+                className="mt-4 lg:mt-8 text-gray-500 hover:text-[#008000] text-center md:text-left"
+                href="https://www.ed.ac.uk/inflammation-research/research/gut-research-unit"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span className="inline-flex">
+                  A project by the Gut Research Unit
+                  <svg
+                    className="ml-1 w-5 h-5"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                    ></path>
+                  </svg>
+                </span>
+                <br />
+                Centre for Inflammation Research
+                <br />
+                University of Edinburgh
+              </a>
             </div>
           </div>
-          <div className="flex items-center justify-center pt-4 lg:pt-8 lg:pb-2">
-            <p className="pl-2 mt-2 mb-4 lg:mb-8 text-center leading-relaxed sm:text-2xl text-xl max-w-lg">
-              Mitochondrial Antioxidant Therapy to Resolve Inflammation in
-              Ulcerative Colitis
-            </p>
-          </div>
-          <div className="flex flex-col md:flex-row items-center justify-center gap-2 mb-4">
-            <Link href="/marvel" legacyBehavior>
-              <button className="ml-2 border-2 border-[#008000] bg-[#008000] text-white hover:text-[#008000] hover:bg-green-100 py-2 px-6 rounded text-lg">
-                For Participants
-              </button>
-            </Link>
-            <Link href="/investigators" legacyBehavior>
-              <button className="ml-2 border-2 border-[#008000] text-[#008000] hover:bg-green-600 hover:text-white py-2 px-6 rounded text-lg">
-                For Investigators
-              </button>
-            </Link>
-          </div>
-
-          <div className="flex items-center justify-center">
-            <a
-              className="mt-8 lg:mt-12 text-center text-gray-500 hover:text-[#008000]"
-              href="https://www.ed.ac.uk/inflammation-research/research/gut-research-unit"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <span className="inline-flex">
-                A project by the Gut Research Unit
-                <svg
-                  className="ml-1 w-5 h-5"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
-                  ></path>
-                </svg>
-              </span>
-              <br />
-              Centre for Inflammation Research
-              <br />
-              University of Edinburgh
-            </a>
+          <div class="col-span-1 max-h-[600px] overflow-y-scroll">
+            <BlueSkyFeed />
           </div>
         </div>
       </SectionWrapper>
@@ -135,6 +141,11 @@ export default function Home() {
             </div>
           </div>
           <div>
+            <script
+              async
+              src="https://embed.bsky.app/static/embed.js"
+              charset="utf-8"
+            ></script>
             <RecruitmentStats></RecruitmentStats>
           </div>
         </div>
