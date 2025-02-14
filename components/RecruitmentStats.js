@@ -4,7 +4,7 @@ import RecruitmentStatsRow from "./RecruitmentStatsRow";
 export default function RecruitmentStats() {
   // import data from file here and define constants
   const center_statistics = RecruitmentStatsData.center_statistics;
-  const base_width = 30; // use this number to adjust the denominator for the center breakdown bars
+  const base_width = RecruitmentStatsData.base_width; // use this number to adjust the denominator for the center breakdown bars
   const target_participants = 206;
 
   //perform data calculations and sorting

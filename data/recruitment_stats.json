@@ -8,5 +8,6 @@
     { "center": "Pinderfields Hospital", "number_of_participants": 4 },
     { "center": "Darlington Memorial Hospital", "number_of_participants": 2 },
     { "center": "Fairfield General Hospital", "number_of_participants": 1 }
-  ]
+  ],
+  "base_width": 50
 }
