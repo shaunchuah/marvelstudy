@@ -108,8 +108,8 @@ export default function Footer() {
             />
           </Link>
           <p className="text-center lg:text-left text-sm text-gray-500 lg:ml-4 lg:mt-0 mt-4">
-            © 2022 MARVEL &amp; mini-Marvel Research Team <br />
-            Last Updated October 2022
+            © 2025 MARVEL Research Team <br />
+            Last Updated August 2025
           </p>
         </div>
       </div>

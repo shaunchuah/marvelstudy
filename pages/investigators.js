@@ -6,24 +6,26 @@ import SectionWrapper from "../components/SectionWrapper";
 
 export default function Investigators() {
   return (
-    (<MotionPage>
+    <MotionPage>
       <main className="flex flex-col w-full">
         <SectionWrapper id="design">
           <SectionHeader title="Study Design" />
           <div className="max-w-screen-lg mx-auto py-12">
             <Image
-              src="/static/marvel_study_overview.png"
+              src="/static/marvel_study_overview_2025.png"
               alt="Marvel Study Design Overview"
-              height="650"
-              width="1920"
+              height="574"
+              width="1499"
               style={{
                 maxWidth: "100%",
-                height: "auto"
-              }} />
+                height: "auto",
+              }}
+            />
             <div className="flex flex-row-reverse">
               <a
-                href="/static/marvel_study_overview.png"
+                href="/static/marvel_study_overview_2025.png"
                 target="_blank"
+                rel="noopener noreferrer"
                 className="hover:text-[#008000] text-gray-600 text-sm flex gap-1 flex-row"
               >
                 Full Size Image
@@ -34,6 +36,7 @@ export default function Investigators() {
                   viewBox="0 0 24 24"
                   xmlns="http://www.w3.org/2000/svg"
                 >
+                  <title>Download Full Size Image</title>
                   <path
                     strokeLinecap="round"
                     strokeLinejoin="round"
@@ -124,52 +127,155 @@ export default function Investigators() {
         <SectionWrapper id="criteria">
           <SectionHeader title="Inclusion &amp; Exclusion Criteria" />
 
-          <div className="grid md:grid-cols-2 gap-8">
-            <div className="py-4">
+          <div className="">
+            <div className="py-4 max-w-prose">
               <h2 className="text-xl uppercase tracking-wider font-semibold text-[#008000] mb-2">
                 Inclusion
               </h2>
-              <ul className="list-disc list-outside ml-4 pl-4 text-lg">
-                <li>Active UC</li>
-                <li>&ge;18 years old</li>
-                <li>Established diagnosis of UC for &ge;3 months</li>
-                <li>Able and willing to give informed consent</li>
+              <ul className="list-disc list-outside ml-4 pl-4 text-base">
                 <li>
-                  Able to take prednisolone at the same time as study
-                  drug/placebo
+                  Active UC (Mayo of score 6 or greater with endoscopy subscore
+                  of 2 or more)
                 </li>
-                <li>Stable on maintenance dose prior to flare</li>
-                <li>5-ASA dose stable for at least 4 weeks</li>
-                <li>Thiopurine dose stable for at least 8 weeks</li>
+                <li>&ge;16 years old</li>
+                <li>
+                  Confirmed diagnosis of UC based on histology and endoscopic
+                  evidence
+                </li>
+                <li>
+                  Clinical evidence* of UC for more than 3 months prior to
+                  screening. * this includes clinical evaluation by an
+                  investigator from previous evidence of IBD based on
+                  documentation, treatment and clinical history of the patient
+                </li>
+                <li>
+                  Patients currently on or previously treated with advanced
+                  therapies are permitted if patients flare whilst on these
+                  treatments and require oral Prednisolone therapy. However,
+                  patients on &gt;2 advanced therapies within last 2 years are
+                  excluded (see also exclusion criteria)
+                </li>
+                <li>
+                  Subjects currently receiving the following treatment for UC
+                  are eligible providing they have been on stable dose for
+                  designated period of time:
+                  <ul className="list-disc list-outside ml-4 pl-4">
+                    <li>
+                      Oral 5-ASA or sulfasalazine stable dose for at least 4
+                      weeks prior to inclusion and during the study period.
+                      Maintenance oral 5-ASA range of doses includes Mezavant
+                      1.2 to 2.4g/day; Pentasa 1 to 2g/day; and Asacol 1.2 to
+                      2.4g/day. Treatment oral 5-ASA range of disease includes
+                      Mezavant 2.4 to 4.8g/day; Pentasa 2 to 4g/day; and Asacol
+                      2.4 to 4.8g/day. Dose escalation (either patient or
+                      clinician-initiated) within this range in these 2 groups
+                      is acceptable and is considered stable within 4 weeks of
+                      screening
+                    </li>
+                    <li>
+                      Azathioprine, 6-mercaptopurine stable dose for 8 weeks
+                      prior to screening
+                    </li>
+                    <li>
+                      Advanced therapies (e.g. infliximab, adalimumab,
+                      certolizumab, vedolizumab, ustekinumab, Risankizumab,
+                      figoltinib, tofactinib and Upadacitinib) for UC, stably
+                      maintained for 8 weeks with no dose escalation, at any
+                      dose prior to screening
+                    </li>
+                    <li>
+                      Topical treatment (5-ASA or steroid based) for active UC
+                      flare including suppository and enema for a week prior to
+                      screening
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  Previous treatment with oral Budesonide (e.g. Cortiment and
+                  Clipper) is permitted if subjects are deemed to have
+                  inadequate clinical response by PI’s clinical judgement
+                </li>
+                <li>
+                  Previous treatment with oral Prednisolone is permitted if
+                  subjects have been in clinical remission and not on this
+                  treatment for &gt;3 months prior to screening
+                </li>
+                <li>
+                  Previous immunosuppressive treatments (e.g. cyclosporine,
+                  mycophenolate, or tacrolimus) are permitted if subjects have
+                  been in clinical remission and not on these treatments for
+                  &gt;1 year prior to screening
+                </li>
+                <li>
+                  Previous intravenous corticosteroids for treatment of colitis
+                  is permitted if subjects have been in clinical remission and
+                  not on these treatments for &gt;1 year prior to screening
+                </li>
+                <li>Able and willing to give informed consent</li>
               </ul>
             </div>
 
-            <div className="py-4">
+            <div className="py-4 max-w-prose">
               <h2 className="text-xl uppercase tracking-wider font-semibold text-[#008000] mb-2">
                 Exclusion
               </h2>
-              <ul className="list-disc list-outside ml-4 pl-4 text-lg">
+              <ul className="list-disc list-outside ml-4 pl-4 text-base">
                 <li>
-                  Severe extensive colitis likely to require hospitalisation or
-                  surgery
+                  Severe extensive colitis as evidenced by:
+                  <ul className="list-disc list-outside ml-4 pl-4">
+                    <li>
+                      Physician judgement that the subject is likely to require
+                      hospitalisation for medical care or surgical intervention
+                      of any kind for UC (e.g. colectomy) within 12 weeks of
+                      baseline
+                    </li>
+                    <li>
+                      Evidence of fulminant colitis, toxic megacolon or recent
+                      history of toxic megacolon within the last 6 months; or
+                      bowel perforation
+                    </li>
+                    <li>
+                      Evidence of acute severe UC fulfilling Truelove and Witts
+                      Criteria (&gt;6 bloody stools/day with evidence of any of
+                      these features: tachycardia [&gt;90bpm], fever
+                      [&gt;37.8C], anaemia [Hb &lt;10.5g/dl], low albumin
+                      [&lt;30g/l])
+                    </li>
+                  </ul>
                 </li>
-                <li>Any previous biologic treatments</li>
+                <li>
+                  Subjects on &gt;2 advanced therapies within last 2 years prior
+                  to screening (e.g. if subject had been treated with anti-TNF,
+                  anti-IL23; and is currently on JAK-inhibitor and then presents
+                  with a flare of UC is excluded)
+                </li>
                 <li>UC confined to proctitis (15cm or less)</li>
-                <li>UC with PSC</li>
-                <li>Pregnancy</li>
+                <li>UC with Primary Sclerosing Cholangitis (PSC)</li>
                 <li>
-                  IV steroids, cyclosporin, mycophenolate or tacrolimus within 8
-                  weeks of screening
+                  Diagnosis of Crohn&apos;s disease or indeterminate colitis
                 </li>
-                <li>Proven GI infection</li>
-                <li>Known allergy/contraindication to MitoQ</li>
-                <li>Currently taking any products containing Coenzyme Q10</li>
+                <li>
+                  Pregnancy (Current or attempting to become pregnant during
+                  trial period) or breastfeeding
+                </li>
                 <li>
                   Subjects with current - or recent history of - severe,
                   progressive, or uncontrolled renal, hepatic, haematological,
                   gastrointestinal, metabolic (including uncontrolled
                   hypercholesterolemia), endocrine, pulmonary, cardiac,
-                  neurological disease.
+                  neurological disease
+                </li>
+                <li>
+                  Subjects who have positive stool examinations for enteric
+                  pathogens or Clostridium difficile toxin at screening
+                </li>
+                <li>Subjects with a known allergy/contraindication to MitoQ</li>
+                <li>
+                  Subjects currently taking any products containing Mitoquinol
+                  mesylate (Coenzyme Q10) or any products containing Coenzyme
+                  derivatives such as Coenzyme A (CoA, SCoA, CoASH). If subjects
+                  are on these products, they can enter the trial after a 7-day
+                  washout period
                 </li>
                 <li>
                   Subjects with current barriers in language or communication
@@ -210,8 +316,7 @@ export default function Investigators() {
             externalLink="https://www.nature.com/articles/s41467-018-07841-3"
           />
         </SectionWrapper>
-        
       </main>
-    </MotionPage>)
+    </MotionPage>
   );
 }

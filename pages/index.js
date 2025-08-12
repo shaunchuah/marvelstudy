@@ -99,10 +99,10 @@ export default function Home() {
           <div className="lg:col-span-2">
             <div className="border p-6 rounded-lg shadow hover:text-[#008000]">
               <Image
-                src="/static/marvel_study_overview.png"
+                src="/static/marvel_study_overview_2025.png"
                 alt="Marvel Study Design Overview"
-                height="650"
-                width="1920"
+                height="574"
+                width="1499"
                 priority={true}
                 style={{
                   maxWidth: "100%",
@@ -297,7 +297,7 @@ export default function Home() {
             />
             <NameCard
               name="Professor David Wilson"
-              position="Chief Investigator (mini-Marvel)"
+              position="Chief Investigator (Marvel)"
               mini
             />
             <NameCard
@@ -326,6 +326,7 @@ export default function Home() {
               position="Clinical Research Nurse"
             />
             <NameCard name="Athena Oddy" position="Clinical Research Nurse" />
+            <NameCard name="Jennifer Waddell" position="Trial Manager" />
             <NameCard name="Alix MacDonald" position="Trial Manager" mini />
             <NameCard name="Lisa Derr" position="Trial Manager" />
             <NameCard name="Katherine Lewis" position="Trial Support Officer" />

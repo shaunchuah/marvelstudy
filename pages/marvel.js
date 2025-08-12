@@ -13,10 +13,10 @@ export default function Participants() {
           <div className="flex justify-center">
             <div className="lg:w-2/3 border p-6 rounded-lg shadow mb-8">
               <Image
-                src="/static/marvel_study_overview.png"
+                src="/static/marvel_study_overview_2025.png"
                 alt="Marvel Study Design Overview"
-                height="650"
-                width="1920"
+                height="574"
+                width="1499"
                 priority={true}
                 style={{
                   maxWidth: "100%",
@@ -92,12 +92,18 @@ export default function Participants() {
               pi="Prof Jimmy Limdi"
               image_url="/static/glasgow.jpg"
             />
+            <MarvelCenterCard
+              name="Addenbrooke's Hospital"
+              city="Cambridge"
+              pi="Dr Sree Subramanian"
+              image_url="/static/glasgow.jpg"
+            />
           </div>
         </SectionWrapper>
         <SectionWrapper id="downloads">
           <SectionHeader title="Participant Information Sheet" />
           <object
-            data="/static/files/marvel_patient_info_v7.0.pdf"
+            data="/static/files/marvel_patient_info_v10.0.pdf"
             type="application/pdf"
             width="100%"
             height="1080px"
@@ -105,8 +111,9 @@ export default function Participants() {
             This browser does not support PDFs. Please download the PDF to view
             it:{" "}
             <a
-              href="/static/files/marvel_patient_info_v7.0.pdf"
+              href="/static/files/marvel_patient_info_v10.0.pdf"
               target="_blank"
+              rel="noopener noreferrer"
             >
               Download Patient Information Sheet.
             </a>
@@ -116,8 +123,9 @@ export default function Participants() {
           <SectionHeader title="Downloads" />
           <div className="text-xl">
             <a
-              href="/static/files/marvel_patient_info_v7.0.pdf"
+              href="/static/files/marvel_patient_info_v10.0.pdf"
               target="_blank"
+              rel="noopener noreferrer"
               className="flex flex-row items-center hover:text-[#008000]"
             >
               <svg
@@ -126,13 +134,14 @@ export default function Participants() {
                 viewBox="0 0 20 20"
                 xmlns="http://www.w3.org/2000/svg"
               >
+                <title>Download PDF icon</title>
                 <path
                   fillRule="evenodd"
                   d="M6 2a2 2 0 00-2 2v12a2 2 0 002 2h8a2 2 0 002-2V7.414A2 2 0 0015.414 6L12 2.586A2 2 0 0010.586 2H6zm5 6a1 1 0 10-2 0v3.586l-1.293-1.293a1 1 0 10-1.414 1.414l3 3a1 1 0 001.414 0l3-3a1 1 0 00-1.414-1.414L11 11.586V8z"
                   clipRule="evenodd"
                 ></path>
               </svg>
-              Participant Information Sheet v7.0
+              Participant Information Sheet v10.0
             </a>
           </div>
         </SectionWrapper>
