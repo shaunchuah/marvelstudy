@@ -30,13 +30,13 @@ export default function Footer() {
             <p className="mb-10">
               Gut Research Unit
               <br />
-              Centre for Inflammation Research
+              Institute for Regeneration and Repair
               <br />
-              Queen's Medical Research Institute
+              Edinburgh BioQuarter
               <br />
-              47 Little France Crescent
+              4-5 Little France Drive
               <br />
-              Edinburgh EH16 4TJ
+              Edinburgh EH16 4UU
             </p>
           </div>
 

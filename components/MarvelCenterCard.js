@@ -1,6 +1,6 @@
-import Image from "next/image";
 
-export default function MarvelCenterCard({ name, city, pi, image_url }) {
+
+export default function MarvelCenterCard({ name, city, pi }) {
   return (
     <div className="border rounded-lg px-4 py-4 shadow-sm text-left">
       {/* <div className="relative h-72 rounded-lg mb-4">

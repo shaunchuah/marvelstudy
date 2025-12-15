@@ -12,7 +12,7 @@ function MyApp({ Component, pageProps, router }) {
   }, []);
 
   if (!isLoaded) {
-    return <></>;
+    return;
   }
   return (
     <>

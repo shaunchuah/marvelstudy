@@ -127,7 +127,7 @@ export default function Investigators() {
         <SectionWrapper id="criteria">
           <SectionHeader title="Inclusion &amp; Exclusion Criteria" />
 
-          <div className="">
+          <div className="grid md:grid-cols-2 gap-8">
             <div className="py-4 max-w-prose">
               <h2 className="text-xl uppercase tracking-wider font-semibold text-[#008000] mb-2">
                 Inclusion

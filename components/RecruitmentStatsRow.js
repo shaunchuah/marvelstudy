@@ -4,7 +4,7 @@ export default function RecruitmentStatsRow({
   base_width,
 }) {
   const formatted_percent =
-    parseFloat((number_of_participants / base_width) * 100).toFixed(2) + "%";
+    `${parseFloat((number_of_participants / base_width) * 100).toFixed(2)}%`;
   return (
     <div className="grid grid-cols-6 items-center mb-1">
       <div className="col-span-3 text-sm">{center}</div>

@@ -1,22 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
-import Head from "next/head";
 import SectionHeader from "../components/SectionHeader";
 import SectionWrapper from "../components/SectionWrapper";
-import NameCard from "../components/NameCard";
-import RecruitmentStats from "../components/RecruitmentStats";
 import BlueSkyFeed from "../components/BlueSkyFeed";
+import MarvelCenterCard from "../components/MarvelCenterCard";
 
 export default function Home() {
-  const consoleStyle =
-    "border-radius:5px; padding: 8px; background: #065f46; color: #fff; font-size: 14px";
-
-  console.log("%cWelcome to the MARVEL study website!", consoleStyle);
-  console.log(
-    "%cWebsite created by Dr Shaun Chuah using NextJS. For website-related queries please get in touch via twitter https://twitter.com/chershiong",
-    consoleStyle
-  );
-
   return (
     <main className="flex flex-col w-full">
       <SectionWrapper id="hero">
@@ -44,13 +33,17 @@ export default function Home() {
               </p>
             </div>
             <div className="flex flex-col md:flex-row items-center gap-2 mb-4">
-              <Link href="/marvel" legacyBehavior>
-                <button className="ml-2 md:ml-0 border-2 border-[#008000] bg-[#008000] text-white hover:text-[#008000] hover:bg-green-100 py-2 px-6 rounded text-lg">
+              <Link href="#participant-info" legacyBehavior>
+                <button
+                type="button"
+                className="ml-2 md:ml-0 border-2 border-[#008000] bg-[#008000] text-white hover:text-[#008000] hover:bg-green-100 py-2 px-6 rounded text-lg">
                   For Participants
                 </button>
               </Link>
               <Link href="/investigators" legacyBehavior>
-                <button className="ml-2 border-2 border-[#008000] text-[#008000] hover:bg-green-600 hover:text-white py-2 px-6 rounded text-lg">
+                <button
+                type="button"
+                className="ml-2 border-2 border-[#008000] text-[#008000] hover:bg-green-600 hover:text-white py-2 px-6 rounded text-lg">
                   For Investigators
                 </button>
               </Link>
@@ -95,8 +88,8 @@ export default function Home() {
       <div className="h-1 w-48 mx-auto my-4 bg-gray-300 rounded-xl"></div>
       <SectionWrapper id="overview">
         <SectionHeader title="Marvel Study Overview" />
-        <div className="grid lg:grid-cols-3 gap-4 lg:gap-6">
-          <div className="lg:col-span-2">
+        <div className="gap-4 lg:gap-6">
+          <div className="md:w-2/3 mx-auto">
             <div className="border p-6 rounded-lg shadow hover:text-[#008000]">
               <Image
                 src="/static/marvel_study_overview_2025.png"
@@ -146,7 +139,7 @@ export default function Home() {
               src="https://embed.bsky.app/static/embed.js"
               charset="utf-8"
             ></script>
-            <RecruitmentStats></RecruitmentStats>
+            
           </div>
         </div>
       </SectionWrapper>
@@ -255,84 +248,125 @@ export default function Home() {
           </div>
         </div>
       </SectionWrapper>
-      <SectionWrapper id="team">
-        <SectionHeader title="About Us" />
-        <div className="flex flex-col lg:flex-row gap-4 lg:gap-8">
-          <div className="lg:w-1/3">
-            <div className="text-sm text-gray-600 italic mb-4">
-              <Image
-                src="/static/cir.jpg"
-                alt="Centre for Inflammation Research"
-                height="933"
-                width="1600"
-                className="rounded-lg"
-                style={{
-                  maxWidth: "100%",
-                  height: "auto",
-                }}
-              />
-              Centre for Inflammation Research, Queen's Medical Research
-              Institute
-            </div>
-            <div className="text-sm text-gray-600 italic mb-4">
-              <Image
-                src="/static/cir_view_cropped.png"
-                alt="Centre for Inflammation Research Site Overview"
-                height="470"
-                width="835"
-                className="rounded-lg"
-                style={{
-                  maxWidth: "100%",
-                  height: "auto",
-                }}
-              />
-              Edinburgh BioQuarter Site Overview
-            </div>
-          </div>
-
-          <div className="h-fit grid gap-4 lg:grid-cols-2 lg:gap-8 lg:w-2/3">
-            <NameCard
-              name="Dr Gwo-Tzer Ho"
-              position="Chief Investigator (Marvel)"
-            />
-            <NameCard
-              name="Professor David Wilson"
-              position="Chief Investigator (Marvel)"
-              mini
-            />
-            <NameCard
-              name="Professor Chris Probert"
-              position="Chair, Trial Steering Committee"
-            />
-            <NameCard
-              name="Professor Jonathan Rhodes"
-              position="Chair, Data Monitoring Committee"
-            />
-            <NameCard
-              name="Michelle Wilson"
-              position="Research Associate"
-              mini
-            />
-            <NameCard
-              name="Dr Rebecca Hall"
-              position="Clinical Research Fellow"
-            />
-            <NameCard
-              name="Dr Shaun Chuah"
-              position="Clinical Research Fellow"
-            />
-            <NameCard
-              name="Beena Pouloose"
-              position="Clinical Research Nurse"
-            />
-            <NameCard name="Athena Oddy" position="Clinical Research Nurse" />
-            <NameCard name="Jennifer Waddell" position="Trial Manager" />
-            <NameCard name="Alix MacDonald" position="Trial Manager" mini />
-            <NameCard name="Lisa Derr" position="Trial Manager" />
-            <NameCard name="Katherine Lewis" position="Trial Support Officer" />
-          </div>
-        </div>
-      </SectionWrapper>
+      <SectionWrapper id="centres">
+                <SectionHeader title="Participating Centres" />
+                <div className="grid lg:grid-cols-3 gap-8 mb-4">
+                  <MarvelCenterCard
+                    name="Western General Hospital"
+                    city="Edinburgh"
+                    pi="Dr Gwo-Tzer Ho"
+                    image_url="/static/edinburgh.jpg"
+                  />
+      
+                  <MarvelCenterCard
+                    name="Queen Elizabeth University Hospital"
+                    city="Glasgow"
+                    pi="Dr John Paul Seenan & Dr Jonathan MacDonald"
+                    image_url="/static/glasgow.jpg"
+                  />
+                  <MarvelCenterCard
+                    name="Gartnavel General Hospital"
+                    city="Glasgow"
+                    pi="Dr John Paul Seenan & Dr Jonathan MacDonald"
+                    image_url="/static/glasgow.jpg"
+                  />
+      
+                  <MarvelCenterCard
+                    name="Glasgow Royal Infirmary"
+                    city="Glasgow"
+                    pi="Prof Daniel Gaya"
+                    image_url="/static/glasgow.jpg"
+                  />
+      
+                  <MarvelCenterCard
+                    name="Ninewells Hospital"
+                    city="Dundee"
+                    pi="Dr Craig Mowat"
+                    image_url="/static/dundee.jpg"
+                  />
+                  <MarvelCenterCard
+                    name="St George's Hospital"
+                    city="London"
+                    pi="Dr Kamal Patel"
+                    image_url="/static/glasgow.jpg"
+                  />
+                  <MarvelCenterCard
+                    name="Darlington Memorial Hospital"
+                    city="Darlington"
+                    pi="Dr Anjan Dhar"
+                    image_url="/static/glasgow.jpg"
+                  />
+                  <MarvelCenterCard
+                    name="Pinderfields Hospital"
+                    city="Wakefield"
+                    pi="Dr Nick Burr"
+                    image_url="/static/glasgow.jpg"
+                  />
+                  <MarvelCenterCard
+                    name="Chelsea and Westminster Hospital"
+                    city="London"
+                    pi="Dr Ibrahim Al-Bakir"
+                    image_url="/static/glasgow.jpg"
+                  />
+                  <MarvelCenterCard
+                    name="Northern Care Alliance NHS Trust"
+                    city="Manchester"
+                    pi="Prof Jimmy Limdi"
+                    image_url="/static/glasgow.jpg"
+                  />
+                  <MarvelCenterCard
+                    name="Addenbrooke's Hospital"
+                    city="Cambridge"
+                    pi="Dr Sree Subramanian"
+                    image_url="/static/glasgow.jpg"
+                  />
+                </div>
+              </SectionWrapper>
+              <SectionWrapper id="participant-info">
+                <SectionHeader title="Participant Information Sheet" />
+                <object
+                  data="/static/files/marvel_patient_info_v10.0.pdf"
+                  type="application/pdf"
+                  width="100%"
+                  height="1080px"
+                >
+                  This browser does not support PDFs. Please download the PDF to view
+                  it:{" "}
+                  <a
+                    href="/static/files/marvel_patient_info_v10.0.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Download Patient Information Sheet.
+                  </a>
+                </object>
+              </SectionWrapper>
+              <SectionWrapper id="downloads">
+                <SectionHeader title="Downloads" />
+                <div className="text-xl">
+                  <a
+                    href="/static/files/marvel_patient_info_v10.0.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex flex-row items-center hover:text-[#008000]"
+                  >
+                    <svg
+                      className="w-8 h-8 mr-1"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <title>Download PDF icon</title>
+                      <path
+                        fillRule="evenodd"
+                        d="M6 2a2 2 0 00-2 2v12a2 2 0 002 2h8a2 2 0 002-2V7.414A2 2 0 0015.414 6L12 2.586A2 2 0 0010.586 2H6zm5 6a1 1 0 10-2 0v3.586l-1.293-1.293a1 1 0 10-1.414 1.414l3 3a1 1 0 001.414 0l3-3a1 1 0 00-1.414-1.414L11 11.586V8z"
+                        clipRule="evenodd"
+                      ></path>
+                    </svg>
+                    Participant Information Sheet v10.0
+                  </a>
+                </div>
+              </SectionWrapper>
     </main>
   );
 }
